@@ -22,6 +22,14 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Local connection invitation state and pending invitation list
 - Illustrative sample profiles are labelled as demo content
 
+### Communities and group management UI
+- Separate `groups.html` community directory and `community.html` detail page
+- Search and filters for community topic and access type
+- Open group join/leave and request-to-join demo states saved locally
+- Community guidelines and discussion topic examples
+- New discussion drafts stored only in this browser
+- Local community moderation preview with production moderation explicitly not connected
+
 ### Company pages and supplier discovery
 - Separate `companies.html` directory and `company.html` profile detail page
 - Searchable illustrative business directory with business-type and region filters
@@ -48,14 +56,18 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── network.html
     ├── companies.html
     ├── company.html
+    ├── groups.html
+    ├── community.html
     ├── assets/css/styles.css
     ├── assets/css/auth.css
     ├── assets/css/network.css
     ├── assets/css/business.css
+    ├── assets/css/groups.css
     ├── assets/js/app.js
     ├── assets/js/auth.js
     ├── assets/js/network.js
     ├── assets/js/business.js
+    ├── assets/js/groups.js
     ├── .github/workflows/deploy.yml
     └── README.md
 
@@ -78,7 +90,7 @@ Real authentication, secure permissions, shared profiles, real-time messaging, n
 3. Home feed and content creation — initial prototype implemented
 4. Profiles and professional network — initial frontend implemented
 5. Company pages and supplier discovery — initial frontend implemented
-6. Groups and community administration
+6. Groups and community administration — initial frontend implemented
 7. Messaging and notifications
 8. Jobs and recruitment
 9. Events and publishing

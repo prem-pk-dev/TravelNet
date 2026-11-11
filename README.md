@@ -14,6 +14,14 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Responsive sidebar and mobile bottom navigation
 - Accessible modal basics, toast feedback and reduced-motion CSS support
 
+### Professional profiles and network discovery
+- Separate `profile.html` and `network.html` pages
+- Local profile editing for headline, location and introduction
+- Experience, education and travel-interest profile sections
+- Searchable professional directory with speciality and region filters
+- Local connection invitation state and pending invitation list
+- Illustrative sample profiles are labelled as demo content
+
 ### Authentication and onboarding UI
 - Separate login.html and signup.html screens
 - Password visibility toggle and client-side form validation
@@ -28,11 +36,11 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── index.html
     ├── login.html
     ├── signup.html
-    ├── onboarding.html
+    ├── onboarding.html\n    ├── profile.html\n    ├── network.html
     ├── assets/css/styles.css
-    ├── assets/css/auth.css
+    ├── assets/css/auth.css\n    ├── assets/css/network.css
     ├── assets/js/app.js
-    ├── assets/js/auth.js
+    ├── assets/js/auth.js\n    ├── assets/js/network.js
     ├── .github/workflows/deploy.yml
     └── README.md
 
@@ -53,7 +61,7 @@ Real authentication, secure permissions, shared profiles, real-time messaging, n
 1. Foundation and shared components — implemented
 2. Authentication and onboarding UI — implemented as frontend prototype
 3. Home feed and content creation — initial prototype implemented
-4. Profiles and professional network — next
+4. Profiles and professional network — initial frontend implemented
 5. Company pages and supplier discovery
 6. Groups and community administration
 7. Messaging and notifications

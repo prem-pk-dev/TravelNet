@@ -22,6 +22,13 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Local connection invitation state and pending invitation list
 - Illustrative sample profiles are labelled as demo content
 
+### Company pages and supplier discovery
+- Separate `companies.html` directory and `company.html` profile detail page
+- Searchable illustrative business directory with business-type and region filters
+- Company profiles show business category, location, destination focus, service capabilities and demo status
+- Local-only request-information form with explicit non-delivery notice
+- All sample organisations are fictional illustrative records and are not verified businesses
+
 ### Authentication and onboarding UI
 - Separate login.html and signup.html screens
 - Password visibility toggle and client-side form validation
@@ -62,7 +69,7 @@ Real authentication, secure permissions, shared profiles, real-time messaging, n
 2. Authentication and onboarding UI — implemented as frontend prototype
 3. Home feed and content creation — initial prototype implemented
 4. Profiles and professional network — initial frontend implemented
-5. Company pages and supplier discovery
+5. Company pages and supplier discovery — initial frontend implemented
 6. Groups and community administration
 7. Messaging and notifications
 8. Jobs and recruitment

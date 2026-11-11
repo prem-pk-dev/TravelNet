@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123d35">
+<meta name="description" content="TravelNet — the professional network for the travel and tourism industry.">
+<title>TravelNet — Travel professionals, connected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="TravelNet home">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 20h30M20 3c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m11 10 18 20M29 10 11 30" stroke="currentColor" stroke-width="1.1" opacity=".75"/></svg></span>
+      <span>travel<span class="brand-light">net</span><small>THE TRAVEL INDUSTRY NETWORK</small></span>
+    </a>
+    <label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="globalSearch" type="search" placeholder="Search people, companies, groups..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label>
+    <nav class="top-actions" aria-label="Quick actions">
+      <button class="icon-button mobile-search" data-action="search" aria-label="Search"><span>⌕</span></button>
+      <button class="icon-button" data-action="notifications" aria-label="Notifications"><span>♧</span><i class="notification-dot"></i></button>
+      <button class="icon-button" data-action="messages" aria-label="Messages">▤</button>
+      <button class="avatar avatar-small" data-action="profile" aria-label="Open profile">PK</button>
+    </nav>
+  </header>
+
+  <div class="workspace">
+    <aside class="sidebar left-sidebar">
+      <div class="profile-mini panel">
+        <div class="profile-cover"></div>
+        <div class="profile-mini-body">
+          <div class="avatar avatar-large">PK</div>
+          <strong>Travel professional</strong>
+          <span class="muted">Build your travel industry identity</span>
+          <div class="profile-progress"><span style="width:35%"></span></div>
+          <small class="muted">Profile setup · 35%</small>
+          <button class="text-link" data-action="profile">Complete your profile <span>↗</span></button>
+        </div>
+      </div>
+      <div class="side-section">
+        <p class="side-label">YOUR NETWORK</p>
+        <button class="side-link active" data-view="home"><span>⌂</span> Home feed</button>
+        <button class="side-link" data-view="network"><span>♧</span> My network <b>2</b></button>
+        <button class="side-link" data-view="groups"><span>◎</span> Communities</button>
+        <button class="side-link" data-view="business"><span>▦</span> Business network</button>
+        <button class="side-link" data-view="jobs"><span>▣</span> Travel careers</button>
+        <button class="side-link" data-view="events"><span>◷</span> Industry events</button>
+      </div>
+      <div class="side-section">
+        <p class="side-label">YOUR WORKSPACE</p>
+        <button class="side-link" data-view="saved"><span>◇</span> Saved items</button>
+        <button class="side-link" data-view="messages"><span>▤</span> Messages</button>
+        <button class="side-link" data-view="profile"><span>◉</span> My profile</button>
+      </div>
+      <div class="sidebar-note">
+        <span class="note-icon">✳</span>
+        <strong>Your industry. Your network.</strong>
+        <p>Meet the people and businesses moving travel forward.</p>
+      </div>
+      <div class="side-footer">About · Community guidelines · Privacy<br>© 2026 TravelNet</div>
+    </aside>
+
+    <main id="mainContent" class="main-content">
+      <section class="welcome-banner">
+        <div>
+          <span class="eyebrow"><span class="live-dot"></span> THE TRAVEL INDUSTRY, CONNECTED</span>
+          <h1>Good connections<br>take you <em>places.</em></h1>
+          <p>Discover travel professionals, exchange knowledge and build partnerships across the industry.</p>
+          <button class="button button-light" data-action="discover">Explore your network <span>↗</span></button>
+        </div>
+        <div class="banner-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="globe"><span>✳</span></div>
+          <span class="float-tag tag-one">TRAVEL</span><span class="float-tag tag-two">CONNECT</span><span class="float-tag tag-three">GROW</span>
+        </div>
+        <span class="banner-index">01 / INDUSTRY NETWORK</span>
+      </section>
+
+      <div class="feed-layout">
+        <section class="feed-column">
+          <div class="section-heading">
+            <div><span class="eyebrow dark-eyebrow">YOUR INDUSTRY PULSE</span><h2>Community feed</h2></div>
+            <select id="feedFilter" aria-label="Filter feed"><option value="all">For you</option><option value="discussion">Discussions</option><option value="business">Business</option><option value="destination">Destinations</option></select>
+          </div>
+          <section class="composer panel">
+            <div class="composer-top"><div class="avatar">PK</div><button class="composer-prompt" data-action="compose">Share an insight, ask a question or start a conversation...</button></div>
+            <div class="composer-actions">
+              <button data-action="compose" data-kind="photo"><span class="action-symbol green">▧</span> Photo</button>
+              <button data-action="compose" data-kind="discussion"><span class="action-symbol blue">▤</span> Discussion</button>
+              <button data-action="compose" data-kind="opportunity"><span class="action-symbol amber">↗</span> Opportunity</button>
+            </div>
+          </section>
+          <div class="feed-sort"><span>Recent conversations</span><span class="sort-line"></span><button data-action="sort">Latest first⌄</button></div>
+          <div id="feedList" class="feed-list" aria-live="polite"></div>
+        </section>
+        <aside class="right-column">
+          <section class="panel discovery-panel">
+            <div class="panel-heading"><div><span class="eyebrow dark-eyebrow">MEET YOUR INDUSTRY</span><h3>People to know</h3></div><button class="plain-arrow" data-view="network">↗</button></div>
+            <div class="person-row"><div class="avatar avatar-coral">AM</div><div class="person-info"><strong>Alex Morgan</strong><span>Destination specialist</span><small>Lisbon · Portugal</small></div><button class="round-add" data-action="connect" data-person="Alex Morgan" aria-label="Connect with Alex Morgan">+</button></div>
+            <div class="person-row"><div class="avatar avatar-blue">SR</div><div class="person-info"><strong>Samira Rahman</strong><span>Hospitality partnerships</span><small>Dubai · UAE</small></div><button class="round-add" data-action="connect" data-person="Samira Rahman" aria-label="Connect with Samira Rahman">+</button></div>
+            <div class="person-row"><div class="avatar avatar-gold">JD</div><div class="person-info"><strong>Jordan Davis</strong><span>Tour operations</span><small>London · UK</small></div><button class="round-add" data-action="connect" data-person="Jordan Davis" aria-label="Connect with Jordan Davis">+</button></div>
+            <button class="full-link" data-view="network">Explore professionals <span>→</span></button>
+          </section>
+          <section class="panel topic-panel">
+            <div class="panel-heading"><div><span class="eyebrow dark-eyebrow">WHAT'S MOVING</span><h3>Industry conversations</h3></div></div>
+            <button class="topic-row" data-action="topic" data-topic="Responsible tourism"><span class="topic-number">01</span><span><strong>Responsible tourism</strong><small>Destination communities</small></span><span>↗</span></button>
+            <button class="topic-row" data-action="topic" data-topic="Travel technology"><span class="topic-number">02</span><span><strong>Travel technology</strong><small>Digital transformation</small></span><span>↗</span></button>
+            <button class="topic-row" data-action="topic" data-topic="Hospitality partnerships"><span class="topic-number">03</span><span><strong>Hospitality partnerships</strong><small>Business connections</small></span><span>↗</span></button>
+          </section>
+          <section class="join-card">
+            <span class="eyebrow">BUILT FOR THE INDUSTRY</span><h3>Your next partnership could start here.</h3><p>Find the right community for your work in travel.</p><button class="button button-dark" data-view="groups">Find your community ↗</button>
+          </section>
+          <div class="right-footer">About · Help · Guidelines · Privacy<br>TravelNet is an independent professional network concept.</div>
+        </aside>
+      </div>
+    </main>
+  </div>
+</div>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="selected" data-view="home"><span>⌂</span>Home</button>
+  <button data-view="network"><span>♧</span>Network</button>
+  <button data-action="compose"><span class="mobile-create">+</span>Create</button>
+  <button data-view="groups"><span>◎</span>Groups</button>
+  <button data-view="profile"><span>◉</span>Profile</button>
+</nav>
+
+<div id="modalRoot" class="modal-root" aria-live="polite"></div>
+<div id="toastRoot" class="toast-root" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

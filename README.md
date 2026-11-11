@@ -43,11 +43,19 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── index.html
     ├── login.html
     ├── signup.html
-    ├── onboarding.html\n    ├── profile.html\n    ├── network.html
+    ├── onboarding.html
+    ├── profile.html
+    ├── network.html
+    ├── companies.html
+    ├── company.html
     ├── assets/css/styles.css
-    ├── assets/css/auth.css\n    ├── assets/css/network.css
+    ├── assets/css/auth.css
+    ├── assets/css/network.css
+    ├── assets/css/business.css
     ├── assets/js/app.js
-    ├── assets/js/auth.js\n    ├── assets/js/network.js
+    ├── assets/js/auth.js
+    ├── assets/js/network.js
+    ├── assets/js/business.js
     ├── .github/workflows/deploy.yml
     └── README.md
 

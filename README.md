@@ -6,40 +6,54 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 
 ## Current implementation
 
-- Responsive desktop/mobile application shell
-- Consistent TravelNet wordmark and visual identity
-- Global search input and keyboard shortcut (Ctrl/Cmd + K)
-- Home feed with category filtering
-- Demo post composer with local persistence
-- Local reaction and save actions
-- Comment composer
-- Connect invitation demo
+### Foundation and home feed
+- Responsive desktop/mobile application shell and consistent TravelNet identity
+- Home feed with category filtering and industry conversation cards
+- Demo post composer with local persistence, reactions, comments and saved state
+- Professional recommendation cards and connection invitation demo
 - Responsive sidebar and mobile bottom navigation
-- Accessible modal basics and toast feedback
-- Reduced-motion CSS support
+- Accessible modal basics, toast feedback and reduced-motion CSS support
+
+### Authentication and onboarding UI
+- Separate login.html and signup.html screens
+- Password visibility toggle and client-side form validation
+- Three-step onboarding.html profile setup flow
+- Role selection, company, job title, location, experience and interest selection
+- Non-sensitive onboarding profile draft saved locally in the current browser
+- Home page links to sign-in, account creation and profile setup
+
+## Project structure
+
+    TravelNet/
+    ├── index.html
+    ├── login.html
+    ├── signup.html
+    ├── onboarding.html
+    ├── assets/css/styles.css
+    ├── assets/css/auth.css
+    ├── assets/js/app.js
+    ├── assets/js/auth.js
+    ├── .github/workflows/deploy.yml
+    └── README.md
 
 ## Technology
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- LocalStorage for non-sensitive prototype state
+- HTML5, CSS3 and Vanilla JavaScript
+- LocalStorage / SessionStorage for non-sensitive prototype state
 - No custom backend
 
 ## Run locally
+Open index.html through a static local server (recommended) or use GitHub Pages/Cloudflare Pages.
 
-Open `index.html` through a static local server (recommended) or use GitHub Pages/Cloudflare Pages.
+## Prototype and security limitations
+This is a static frontend prototype, not a production social network. Sign-in and account creation screens are UI demonstrations only. No credentials are transmitted, authenticated or stored. Do not enter real passwords or sensitive personal information. Profile drafts and feed interactions are stored only in the current browser and are not shared between users or devices.
 
-## Prototype limitations
+Real authentication, secure permissions, shared profiles, real-time messaging, notifications, verification, moderation, payments and recruitment data require trusted external services or a backend. These features must not be represented as live until integrated and tested.
 
-This is a static frontend prototype. Posts and interactions stored in the browser are local to that browser and are not shared between users or devices. Real authentication, secure permissions, real-time messaging, shared content, notifications, verification, payments and recruitment data require trusted external services or a backend. Do not enter passwords, sensitive personal information or real applicant data in this prototype.
-
-## Planned roadmap
-
-1. Foundation and shared components
-2. Authentication and onboarding UI
-3. Home feed and content creation
-4. Profiles and professional network
+## Roadmap
+1. Foundation and shared components — implemented
+2. Authentication and onboarding UI — implemented as frontend prototype
+3. Home feed and content creation — initial prototype implemented
+4. Profiles and professional network — next
 5. Company pages and supplier discovery
 6. Groups and community administration
 7. Messaging and notifications
@@ -52,7 +66,6 @@ This is a static frontend prototype. Posts and interactions stored in the browse
 14. Deployment verification
 
 ## Product principles
-
 - Separate HTML pages for major product screens.
 - Mobile-first responsive experience.
 - No fake testimonials, fake ratings or unverified business claims.

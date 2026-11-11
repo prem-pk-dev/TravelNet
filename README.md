@@ -22,6 +22,13 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Local connection invitation state and pending invitation list
 - Illustrative sample profiles are labelled as demo content
 
+### Messaging and notifications UI
+- Separate `messages.html` inbox and `conversation.html` conversation view
+- Searchable inbox with unread filter and browser-local conversation state
+- Local demo message composer; no message is transmitted or delivered
+- Separate `notifications.html` page with unread filtering and mark-read controls
+- Fictional sample conversations and alerts are clearly identified as illustrative; no push or real-time notification service is connected
+
 ### Communities and group management UI
 - Separate `groups.html` community directory and `community.html` detail page
 - Search and filters for community topic and access type
@@ -91,7 +98,7 @@ Real authentication, secure permissions, shared profiles, real-time messaging, n
 4. Profiles and professional network — initial frontend implemented
 5. Company pages and supplier discovery — initial frontend implemented
 6. Groups and community administration — initial frontend implemented
-7. Messaging and notifications
+7. Messaging and notifications — initial frontend implemented
 8. Jobs and recruitment
 9. Events and publishing
 10. Learning Hub

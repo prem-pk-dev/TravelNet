@@ -39,7 +39,7 @@ function renderAllLists(){
 function showTab(target){
  document.querySelectorAll("[data-network-tab]").forEach(b=>{const active=b.dataset.networkTab===target;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
  document.querySelectorAll("[data-network-panel]").forEach(p=>p.hidden=p.dataset.networkPanel!==target);
- const discover=document.querySelector(".network-section"),toolbar=document.querySelector(".network-toolbar");
+ const discover=$("#peopleGrid")?.closest(".network-section"),toolbar=document.querySelector(".network-toolbar");
  if(discover)discover.hidden=target!=="discover";if(toolbar)toolbar.hidden=target!=="discover";
 }
 ["directorySearch","roleFilter","regionFilter"].forEach(id=>$("#"+id)?.addEventListener("input",renderPeople));

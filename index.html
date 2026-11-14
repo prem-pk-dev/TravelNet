@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/home-discovery.css">
+<link rel="stylesheet" href="assets/css/home-discovery.css">\n<link rel="stylesheet" href="assets/css/global-search.css">
 </head>
 <body>
 <div class="app-shell">
@@ -19,7 +19,7 @@
       <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 20h30M20 3c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m11 10 18 20M29 10 11 30" stroke="currentColor" stroke-width="1.1" opacity=".75"/></svg></span>
       <span>travel<span class="brand-light">net</span><small>THE TRAVEL INDUSTRY NETWORK</small></span>
     </a>
-    <label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="globalSearch" type="search" placeholder="Search people, companies, groups..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label>
+    <div class="global-search-wrap"><label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="globalSearch" type="search" placeholder="Search people, companies, groups..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label><div id="globalSearchResults" class="global-search-results" role="listbox" aria-label="Search suggestions" hidden></div></div>
     <nav class="top-actions" aria-label="Quick actions">
       <button class="icon-button mobile-search" data-action="search" aria-label="Search"><span>⌕</span></button>
       <a class="icon-button" href="notifications.html" aria-label="Notifications"><span>♧</span><i class="notification-dot"></i></a>
@@ -156,6 +156,6 @@
 
 <div id="modalRoot" class="modal-root" aria-live="polite"></div>
 <div id="toastRoot" class="toast-root" aria-live="polite"></div>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.js"></script>\n<script src="assets/js/global-search.js"></script>
 </body>
 </html>

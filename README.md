@@ -12,6 +12,8 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Demo post composer with local persistence, reactions, comments and saved state
 - Professional recommendation cards and connection invitation demo
 - Responsive sidebar and mobile bottom navigation
+- Homepage discovery sections for communities, travel business categories and industry exchange CTA
+- Dedicated responsive homepage stylesheet at `assets/css/home-discovery.css`
 - Accessible modal basics, toast feedback and reduced-motion CSS support
 
 ### Professional profiles and network discovery
@@ -65,7 +67,9 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── company.html
     ├── groups.html
     ├── community.html
+    ├── research/phase-01-linkedin-homepage.md
     ├── assets/css/styles.css
+    ├── assets/css/home-discovery.css
     ├── assets/css/auth.css
     ├── assets/css/network.css
     ├── assets/css/business.css
@@ -90,6 +94,9 @@ Open index.html through a static local server (recommended) or use GitHub Pages/
 This is a static frontend prototype, not a production social network. Sign-in and account creation screens are UI demonstrations only. No credentials are transmitted, authenticated or stored. Do not enter real passwords or sensitive personal information. Profile drafts and feed interactions are stored only in the current browser and are not shared between users or devices.
 
 Real authentication, secure permissions, shared profiles, real-time messaging, notifications, verification, moderation, payments and recruitment data require trusted external services or a backend. These features must not be represented as live until integrated and tested.
+
+## Research notes
+- `research/phase-01-linkedin-homepage.md` — LinkedIn homepage architecture audit, TravelNet adaptation and remaining acceptance checks.
 
 ## Roadmap
 1. Foundation and shared components — implemented

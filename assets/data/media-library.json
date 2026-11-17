@@ -13,7 +13,7 @@
       "wildlife",
       "sunrise"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -30,7 +30,7 @@
       "mountains",
       "nature"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -47,7 +47,7 @@
       "sunset",
       "architecture"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -64,7 +64,7 @@
       "garden",
       "culture"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -81,7 +81,7 @@
       "village",
       "mediterranean"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -95,7 +95,7 @@
       "destination",
       "santorini-greece"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -109,7 +109,7 @@
       "destination",
       "banff-canada"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -123,7 +123,7 @@
       "destination",
       "kyoto-japan"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -137,7 +137,7 @@
       "destination",
       "amalfi-coast-italy"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -151,7 +151,7 @@
       "destination",
       "serengeti-tanzania"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -165,7 +165,7 @@
       "destination",
       "machu-picchu-peru"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -179,7 +179,7 @@
       "destination",
       "maldives"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -193,7 +193,7 @@
       "destination",
       "dubai-uae"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -207,7 +207,7 @@
       "destination",
       "troms-norway"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -221,7 +221,7 @@
       "destination",
       "bali-indonesia"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -235,7 +235,7 @@
       "destination",
       "new-york-usa"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -249,7 +249,7 @@
       "destination",
       "london-uk"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -263,7 +263,7 @@
       "destination",
       "petra-jordan"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -277,7 +277,7 @@
       "destination",
       "great-wall-china"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -291,7 +291,7 @@
       "destination",
       "zermatt-switzerland"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -305,7 +305,7 @@
       "destination",
       "cape-town-south-africa"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -319,7 +319,7 @@
       "destination",
       "queenstown-new-zealand"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -333,7 +333,7 @@
       "destination",
       "reykjavik-iceland"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -347,7 +347,7 @@
       "destination",
       "bora-bora-french-polynesia"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -361,7 +361,7 @@
       "destination",
       "ha-long-bay-vietnam"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -375,7 +375,7 @@
       "destination",
       "jaipur-india"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -389,7 +389,7 @@
       "destination",
       "cappadocia-t-rkiye"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -403,7 +403,7 @@
       "destination",
       "lisbon-portugal"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -417,7 +417,7 @@
       "destination",
       "rio-de-janeiro-brazil"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -431,7 +431,7 @@
       "destination",
       "plitvice-lakes-croatia"
     ],
-    "category": "travel",
+    "category": "destinations",
     "subcategory": "destinations"
   },
   {
@@ -1416,5 +1416,755 @@
     ],
     "category": "technology",
     "subcategory": "devices"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_01.jpg",
+    "path": "images/01_destinations/destinations_01.jpg",
+    "title": "Destinations 01",
+    "alt": "Destination imagery and place inspiration. Asset 01.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_02.jpg",
+    "path": "images/01_destinations/destinations_02.jpg",
+    "title": "Destinations 02",
+    "alt": "Destination imagery and place inspiration. Asset 02.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_03.jpg",
+    "path": "images/01_destinations/destinations_03.jpg",
+    "title": "Destinations 03",
+    "alt": "Destination imagery and place inspiration. Asset 03.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_04.jpg",
+    "path": "images/01_destinations/destinations_04.jpg",
+    "title": "Destinations 04",
+    "alt": "Destination imagery and place inspiration. Asset 04.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_05.jpg",
+    "path": "images/01_destinations/destinations_05.jpg",
+    "title": "Destinations 05",
+    "alt": "Destination imagery and place inspiration. Asset 05.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_06.jpg",
+    "path": "images/01_destinations/destinations_06.jpg",
+    "title": "Destinations 06",
+    "alt": "Destination imagery and place inspiration. Asset 06.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_07.jpg",
+    "path": "images/01_destinations/destinations_07.jpg",
+    "title": "Destinations 07",
+    "alt": "Destination imagery and place inspiration. Asset 07.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_08.jpg",
+    "path": "images/01_destinations/destinations_08.jpg",
+    "title": "Destinations 08",
+    "alt": "Destination imagery and place inspiration. Asset 08.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_09.jpg",
+    "path": "images/01_destinations/destinations_09.jpg",
+    "title": "Destinations 09",
+    "alt": "Destination imagery and place inspiration. Asset 09.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/01_destinations/destinations_10.jpg",
+    "path": "images/01_destinations/destinations_10.jpg",
+    "title": "Destinations 10",
+    "alt": "Destination imagery and place inspiration. Asset 10.",
+    "description": "Destination imagery and place inspiration.",
+    "tags": [
+      "destinations",
+      "destinations",
+      "travel",
+      "travelnet"
+    ],
+    "category": "destinations",
+    "subcategory": "Destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_01.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_01.jpg",
+    "title": "Nature & Wildlife 01",
+    "alt": "Nature and wildlife imagery. Asset 01.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_02.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_02.jpg",
+    "title": "Nature & Wildlife 02",
+    "alt": "Nature and wildlife imagery. Asset 02.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_03.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_03.jpg",
+    "title": "Nature & Wildlife 03",
+    "alt": "Nature and wildlife imagery. Asset 03.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_04.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_04.jpg",
+    "title": "Nature & Wildlife 04",
+    "alt": "Nature and wildlife imagery. Asset 04.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_05.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_05.jpg",
+    "title": "Nature & Wildlife 05",
+    "alt": "Nature and wildlife imagery. Asset 05.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_06.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_06.jpg",
+    "title": "Nature & Wildlife 06",
+    "alt": "Nature and wildlife imagery. Asset 06.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_07.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_07.jpg",
+    "title": "Nature & Wildlife 07",
+    "alt": "Nature and wildlife imagery. Asset 07.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_08.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_08.jpg",
+    "title": "Nature & Wildlife 08",
+    "alt": "Nature and wildlife imagery. Asset 08.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/02_nature_wildlife/nature_wildlife_09.jpg",
+    "path": "images/02_nature_wildlife/nature_wildlife_09.jpg",
+    "title": "Nature & Wildlife 09",
+    "alt": "Nature and wildlife imagery. Asset 09.",
+    "description": "Nature and wildlife imagery.",
+    "tags": [
+      "nature",
+      "nature & wildlife",
+      "travel",
+      "travelnet"
+    ],
+    "category": "nature",
+    "subcategory": "Nature & Wildlife"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_01.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_01.jpg",
+    "title": "Adventure Activities 01",
+    "alt": "Outdoor activities and adventure travel. Asset 01.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_02.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_02.jpg",
+    "title": "Adventure Activities 02",
+    "alt": "Outdoor activities and adventure travel. Asset 02.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_03.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_03.jpg",
+    "title": "Adventure Activities 03",
+    "alt": "Outdoor activities and adventure travel. Asset 03.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_04.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_04.jpg",
+    "title": "Adventure Activities 04",
+    "alt": "Outdoor activities and adventure travel. Asset 04.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_05.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_05.jpg",
+    "title": "Adventure Activities 05",
+    "alt": "Outdoor activities and adventure travel. Asset 05.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_06.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_06.jpg",
+    "title": "Adventure Activities 06",
+    "alt": "Outdoor activities and adventure travel. Asset 06.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_07.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_07.jpg",
+    "title": "Adventure Activities 07",
+    "alt": "Outdoor activities and adventure travel. Asset 07.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/03_adventure_activities/adventure_activities_08.jpg",
+    "path": "images/03_adventure_activities/adventure_activities_08.jpg",
+    "title": "Adventure Activities 08",
+    "alt": "Outdoor activities and adventure travel. Asset 08.",
+    "description": "Outdoor activities and adventure travel.",
+    "tags": [
+      "adventure",
+      "adventure activities",
+      "travel",
+      "travelnet"
+    ],
+    "category": "adventure",
+    "subcategory": "Adventure Activities"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/04_travel_community/travel_community_01.jpg",
+    "path": "images/04_travel_community/travel_community_01.jpg",
+    "title": "Travel Community 01",
+    "alt": "Travelers and community moments. Asset 01.",
+    "description": "Travelers and community moments.",
+    "tags": [
+      "community",
+      "travel community",
+      "travel",
+      "travelnet"
+    ],
+    "category": "community",
+    "subcategory": "Travel Community"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/04_travel_community/travel_community_02.jpg",
+    "path": "images/04_travel_community/travel_community_02.jpg",
+    "title": "Travel Community 02",
+    "alt": "Travelers and community moments. Asset 02.",
+    "description": "Travelers and community moments.",
+    "tags": [
+      "community",
+      "travel community",
+      "travel",
+      "travelnet"
+    ],
+    "category": "community",
+    "subcategory": "Travel Community"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/05_food_culture/food_culture_01.jpg",
+    "path": "images/05_food_culture/food_culture_01.jpg",
+    "title": "Food & Culture 01",
+    "alt": "Food, local culture and culinary travel. Asset 01.",
+    "description": "Food, local culture and culinary travel.",
+    "tags": [
+      "food",
+      "food & culture",
+      "travel",
+      "travelnet"
+    ],
+    "category": "food",
+    "subcategory": "Food & Culture"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/05_food_culture/food_culture_02.jpg",
+    "path": "images/05_food_culture/food_culture_02.jpg",
+    "title": "Food & Culture 02",
+    "alt": "Food, local culture and culinary travel. Asset 02.",
+    "description": "Food, local culture and culinary travel.",
+    "tags": [
+      "food",
+      "food & culture",
+      "travel",
+      "travelnet"
+    ],
+    "category": "food",
+    "subcategory": "Food & Culture"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/05_food_culture/food_culture_03.jpg",
+    "path": "images/05_food_culture/food_culture_03.jpg",
+    "title": "Food & Culture 03",
+    "alt": "Food, local culture and culinary travel. Asset 03.",
+    "description": "Food, local culture and culinary travel.",
+    "tags": [
+      "food",
+      "food & culture",
+      "travel",
+      "travelnet"
+    ],
+    "category": "food",
+    "subcategory": "Food & Culture"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/05_food_culture/food_culture_04.jpg",
+    "path": "images/05_food_culture/food_culture_04.jpg",
+    "title": "Food & Culture 04",
+    "alt": "Food, local culture and culinary travel. Asset 04.",
+    "description": "Food, local culture and culinary travel.",
+    "tags": [
+      "food",
+      "food & culture",
+      "travel",
+      "travelnet"
+    ],
+    "category": "food",
+    "subcategory": "Food & Culture"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/06_hotels_stays/hotels_stays_01.jpg",
+    "path": "images/06_hotels_stays/hotels_stays_01.jpg",
+    "title": "Hotels & Stays 01",
+    "alt": "Accommodation and hospitality imagery. Asset 01.",
+    "description": "Accommodation and hospitality imagery.",
+    "tags": [
+      "hotels",
+      "hotels & stays",
+      "travel",
+      "travelnet"
+    ],
+    "category": "hotels",
+    "subcategory": "Hotels & Stays"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/06_hotels_stays/hotels_stays_02.jpg",
+    "path": "images/06_hotels_stays/hotels_stays_02.jpg",
+    "title": "Hotels & Stays 02",
+    "alt": "Accommodation and hospitality imagery. Asset 02.",
+    "description": "Accommodation and hospitality imagery.",
+    "tags": [
+      "hotels",
+      "hotels & stays",
+      "travel",
+      "travelnet"
+    ],
+    "category": "hotels",
+    "subcategory": "Hotels & Stays"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/06_hotels_stays/hotels_stays_03.jpg",
+    "path": "images/06_hotels_stays/hotels_stays_03.jpg",
+    "title": "Hotels & Stays 03",
+    "alt": "Accommodation and hospitality imagery. Asset 03.",
+    "description": "Accommodation and hospitality imagery.",
+    "tags": [
+      "hotels",
+      "hotels & stays",
+      "travel",
+      "travelnet"
+    ],
+    "category": "hotels",
+    "subcategory": "Hotels & Stays"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/06_hotels_stays/hotels_stays_04.jpg",
+    "path": "images/06_hotels_stays/hotels_stays_04.jpg",
+    "title": "Hotels & Stays 04",
+    "alt": "Accommodation and hospitality imagery. Asset 04.",
+    "description": "Accommodation and hospitality imagery.",
+    "tags": [
+      "hotels",
+      "hotels & stays",
+      "travel",
+      "travelnet"
+    ],
+    "category": "hotels",
+    "subcategory": "Hotels & Stays"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_01.jpg",
+    "path": "images/07_transport/transport_01.jpg",
+    "title": "Transport 01",
+    "alt": "Travel transport and mobility imagery. Asset 01.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_02.jpg",
+    "path": "images/07_transport/transport_02.jpg",
+    "title": "Transport 02",
+    "alt": "Travel transport and mobility imagery. Asset 02.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_03.jpg",
+    "path": "images/07_transport/transport_03.jpg",
+    "title": "Transport 03",
+    "alt": "Travel transport and mobility imagery. Asset 03.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_04.jpg",
+    "path": "images/07_transport/transport_04.jpg",
+    "title": "Transport 04",
+    "alt": "Travel transport and mobility imagery. Asset 04.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_05.jpg",
+    "path": "images/07_transport/transport_05.jpg",
+    "title": "Transport 05",
+    "alt": "Travel transport and mobility imagery. Asset 05.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_06.jpg",
+    "path": "images/07_transport/transport_06.jpg",
+    "title": "Transport 06",
+    "alt": "Travel transport and mobility imagery. Asset 06.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_07.jpg",
+    "path": "images/07_transport/transport_07.jpg",
+    "title": "Transport 07",
+    "alt": "Travel transport and mobility imagery. Asset 07.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_08.jpg",
+    "path": "images/07_transport/transport_08.jpg",
+    "title": "Transport 08",
+    "alt": "Travel transport and mobility imagery. Asset 08.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_09.jpg",
+    "path": "images/07_transport/transport_09.jpg",
+    "title": "Transport 09",
+    "alt": "Travel transport and mobility imagery. Asset 09.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_10.jpg",
+    "path": "images/07_transport/transport_10.jpg",
+    "title": "Transport 10",
+    "alt": "Travel transport and mobility imagery. Asset 10.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_11.jpg",
+    "path": "images/07_transport/transport_11.jpg",
+    "title": "Transport 11",
+    "alt": "Travel transport and mobility imagery. Asset 11.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_12.jpg",
+    "path": "images/07_transport/transport_12.jpg",
+    "title": "Transport 12",
+    "alt": "Travel transport and mobility imagery. Asset 12.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/07_transport/transport_13.jpg",
+    "path": "images/07_transport/transport_13.jpg",
+    "title": "Transport 13",
+    "alt": "Travel transport and mobility imagery. Asset 13.",
+    "description": "Travel transport and mobility imagery.",
+    "tags": [
+      "transport",
+      "transport",
+      "travel",
+      "travelnet"
+    ],
+    "category": "transport",
+    "subcategory": "Transport"
   }
 ]

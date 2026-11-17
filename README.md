@@ -58,6 +58,14 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 
     TravelNet/
     ├── index.html
+    ├── stories.html
+    ├── story-create.html
+    ├── story-editor.html
+    ├── story-viewer.html
+    ├── my-stories.html
+    ├── story-highlights.html
+    ├── story-insights.html
+    ├── story-settings.html
     ├── login.html
     ├── signup.html
     ├── onboarding.html
@@ -68,12 +76,14 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── groups.html
     ├── community.html
     ├── research/phase-01-linkedin-homepage.md
+    ├── assets/css/stories.css
     ├── assets/css/styles.css
     ├── assets/css/home-discovery.css
     ├── assets/css/auth.css
     ├── assets/css/network.css
     ├── assets/css/business.css
     ├── assets/css/groups.css
+    ├── assets/js/story-app.js
     ├── assets/js/app.js
     ├── assets/js/auth.js
     ├── assets/js/network.js
@@ -81,6 +91,18 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── assets/js/groups.js
     ├── .github/workflows/deploy.yml
     └── README.md
+
+
+
+### TravelNet Stories — frontend module
+- Combined social + professional Stories experience with separate pages for feed, creation, editing, full-screen viewing, personal story management, highlights, insights and privacy settings
+- Photo/video/text and travel-focused story formats, category and location metadata, mentions, poll/question/quiz and itinerary fields
+- Public, connections/followers and custom-audience selection UI; reply and sharing preferences
+- 24-hour expiry with active/archive separation; highlight collections remain visible in the local profile prototype
+- Local reactions, replies, share actions, reports, hide controls and illustrative insights
+- Browser-local metadata in LocalStorage and uploaded media in IndexedDB; no server upload or cross-device sharing
+- Homepage Stories discovery strip links into the Stories module while preserving existing TravelNet branding
+- Eight standalone HTML pages with shared responsive Stories CSS and vanilla JavaScript
 
 ## Technology
 - HTML5, CSS3 and Vanilla JavaScript

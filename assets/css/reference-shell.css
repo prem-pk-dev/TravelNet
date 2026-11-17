@@ -238,3 +238,55 @@ html,body{overflow-x:clip!important}
 .reference-metrics article{background:linear-gradient(135deg,#fff 0%,#f4f2ff 100%)!important;border-color:#e8e4fa!important;box-shadow:0 4px 16px rgba(59,51,112,.05)}
 @media(max-width:900px){.workspace>.left-sidebar,.workspace>.reference-sidebar{display:none!important}}
 @media(max-width:700px){.home-community-card{min-height:220px!important;padding-top:105px!important}}
+
+
+/* TravelNet interaction layer — subtle motion, premium gradients and accessible hover states */
+:root{--tn-violet:#6846d5;--tn-blue:#3979d8;--tn-cyan:#27b9c7;--tn-glow:rgba(104,70,213,.22)}
+@keyframes tn-gradient-flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes tn-soft-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes tn-fade-up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tn-shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+/* Gradient accents */
+.topbar{background:linear-gradient(105deg,#fff 0%,#fbfaff 48%,#f2f8ff 100%)!important;border-bottom:1px solid rgba(104,70,213,.12)!important}
+.topbar:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,#6742d3,#4389e5,#2fc0c6,#6742d3);background-size:220% 100%;animation:tn-gradient-flow 9s ease infinite}
+.reference-hero,.home-hero,.hero-panel{
+ background-size:180% 180%!important;
+ animation:tn-gradient-flow 16s ease infinite;
+ box-shadow:0 16px 42px rgba(68,57,151,.13);
+}
+.reference-hero-art{animation:tn-soft-float 6s ease-in-out infinite;filter:drop-shadow(0 12px 22px rgba(30,36,98,.2))}
+/* Cards lift gently and reveal a tinted border */
+.reference-card,.home-community-card,.home-post-card,.panel,.reference-metrics article,.home-business-strip>div{
+ transition:transform .24s cubic-bezier(.2,.75,.25,1),box-shadow .24s ease,border-color .24s ease,background-color .24s ease!important;
+}
+.reference-card:hover,.home-community-card:hover,.home-post-card:hover{
+ transform:translateY(-5px)!important;
+ box-shadow:0 16px 34px rgba(58,54,125,.14)!important;
+ border-color:rgba(104,70,213,.42)!important;
+}
+.reference-card img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s ease!important}
+.reference-card:hover img{transform:scale(1.045);filter:saturate(1.08)}
+.reference-metrics article:hover,.home-business-strip>div:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(58,54,125,.1)!important;border-color:#c9bdf7!important}
+/* Buttons, pills and links */
+button,.button,.btn,.reference-card-copy a,.reference-card-copy button,.home-card-link{
+ transition:transform .18s ease,box-shadow .2s ease,background .2s ease,color .2s ease!important;
+}
+button:hover,.button:hover,.btn:hover,.reference-card-copy a:hover,.reference-card-copy button:hover{
+ transform:translateY(-2px);box-shadow:0 7px 17px rgba(83,62,173,.18)!important;
+}
+button:active,.button:active,.btn:active{transform:translateY(0) scale(.98)}
+a:not(.brand):not(.avatar){transition:color .18s ease,background-color .18s ease,border-color .18s ease}
+.side-link{position:relative;overflow:hidden}
+.side-link:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;border-radius:0 4px 4px 0;background:linear-gradient(180deg,#a995ff,#4bc4d1);transform:scaleY(0);transition:transform .2s ease}
+.side-link:hover:before,.side-link.active:before{transform:scaleY(1)}
+.side-link:hover{background:rgba(255,255,255,.12)!important;transform:translateX(3px)}
+.top-actions .icon-button:hover{background:linear-gradient(135deg,#eee9ff,#e5f4ff)!important;box-shadow:0 5px 15px rgba(82,64,165,.15)}
+/* Entrance motion kept restrained */
+.reference-section,.reference-metrics,.reference-hero,.home-community-grid{animation:tn-fade-up .48s ease both}
+.reference-section:nth-of-type(2){animation-delay:.06s}.reference-section:nth-of-type(3){animation-delay:.12s}
+/* Keyboard focus and reduced-motion support */
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid rgba(83,126,230,.55)!important;outline-offset:3px!important}
+@media(hover:none){.reference-card:hover,.home-community-card:hover,.home-post-card:hover{transform:none!important}}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}

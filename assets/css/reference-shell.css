@@ -390,3 +390,54 @@ body.tn-dark .reference-card-copy,body.tn-dark .story-card-body{
  .panel,.home-metrics article,.purpose-chooser,.purpose-detail,.reference-card,.story-card,
  .network-overview-card,.home-community-card{animation:none!important;background-position:50% 50%!important}
 }
+
+
+/* Community photo cards: strong image contrast and readable foreground typography */
+.home-community-grid .home-community-card{
+  position:relative!important;isolation:isolate!important;overflow:hidden!important;
+  display:flex!important;flex-direction:column!important;justify-content:flex-end!important;
+  min-height:264px!important;padding:20px!important;
+  background-size:cover!important;background-position:center!important;
+  color:#fff!important;text-shadow:0 1px 3px rgba(8,15,35,.42)!important;
+  border:1px solid rgba(255,255,255,.22)!important;
+  box-shadow:0 12px 28px rgba(24,35,70,.16)!important;
+}
+.home-community-grid .home-community-card:before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(8,15,35,.06) 0%,rgba(8,15,35,.12) 28%,rgba(8,15,35,.56) 62%,rgba(8,15,35,.94) 100%)!important;
+  transition:background .3s ease,opacity .3s ease;
+}
+.home-community-grid .home-community-card>*{position:relative!important;z-index:1!important}
+.home-community-grid .home-community-card .home-community-icon{
+  width:38px!important;height:38px!important;margin-bottom:auto!important;
+  display:grid!important;place-items:center!important;
+  background:rgba(255,255,255,.94)!important;color:#4e48a6!important;
+  border:1px solid rgba(255,255,255,.8)!important;border-radius:11px!important;
+  text-shadow:none!important;box-shadow:0 5px 15px rgba(7,13,35,.2)!important;
+}
+.home-community-grid .home-community-card .home-card-kicker{
+  color:#d9f3ed!important;font-size:9px!important;font-weight:800!important;
+  letter-spacing:1.25px!important;margin:15px 0 5px!important;
+  text-shadow:0 1px 4px rgba(0,0,0,.6)!important;
+}
+.home-community-grid .home-community-card strong{
+  color:#fff!important;font-size:16px!important;line-height:1.35!important;
+  text-shadow:0 2px 7px rgba(0,0,0,.65)!important;
+}
+.home-community-grid .home-community-card p{
+  color:rgba(255,255,255,.94)!important;font-size:11px!important;line-height:1.55!important;
+  margin:7px 0 12px!important;min-height:0!important;
+  text-shadow:0 1px 5px rgba(0,0,0,.75)!important;
+}
+.home-community-grid .home-community-card .home-card-link{
+  color:#fff!important;font-size:11px!important;font-weight:800!important;
+  text-shadow:0 1px 5px rgba(0,0,0,.7)!important;
+}
+.home-community-grid .home-community-card:hover:before{
+  background:linear-gradient(180deg,rgba(8,15,35,.12) 0%,rgba(8,15,35,.2) 28%,rgba(8,15,35,.64) 62%,rgba(8,15,35,.97) 100%)!important;
+}
+.home-community-grid .home-community-card:hover{
+  transform:translateY(-5px)!important;
+  box-shadow:0 18px 36px rgba(24,35,70,.23)!important;
+}
+@media(max-width:700px){.home-community-grid .home-community-card{min-height:230px!important}}

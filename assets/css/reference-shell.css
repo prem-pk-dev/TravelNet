@@ -85,7 +85,7 @@ body.tn-dark .media-card p,body.tn-dark .reference-card-copy p,body.tn-dark .hom
 
 /* Global consistency: one fixed shell and a single TravelNet palette */
 :root{--tn-purple:#5b45c5;--tn-purple-dark:#4934a8;--tn-blue:#347fca;--tn-accent:#6955d6;--tn-ink:#22283d;--tn-muted:#778198;--tn-line:#e5e8f2;--tn-paper:#f4f6fc;--tn-card:#fff;--forest:#5b45c5;--forest-2:#4c6dbb;--mint:#eeeaff;--ink:#22283d;--muted:#778198;--paper:#f4f6fc;--line:#e5e8f2;--white:#fff}
-html,body{overflow-x:hidden;background:var(--tn-paper)!important;color:var(--tn-ink)!important}
+html,body{overflow-x:clip!important;overflow-y:visible!important;background:var(--tn-paper)!important;color:var(--tn-ink)!important}
 .topbar{background:#fff!important;border-bottom:1px solid var(--tn-line)!important;gap:clamp(10px,1.5vw,22px)!important}
 .brand{color:var(--tn-purple-dark)!important}.brand-light{color:#8c83c9!important}
 .workspace{width:min(1540px,100%)!important;max-width:1540px!important;grid-template-columns:248px minmax(0,1fr)!important;gap:20px!important;margin:18px auto!important;padding:0 20px!important;align-items:start!important}
@@ -188,3 +188,8 @@ img.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity
 .left-sidebar .side-link>span>img.tn-sidebar-icon{width:17px!important;height:17px!important}
 .brand-tab>img.tn-sidebar-icon{width:16px!important;height:16px!important;filter:brightness(0) saturate(100%) invert(26%) sepia(26%) saturate(2320%) hue-rotate(220deg) brightness(88%) contrast(91%)!important}
 .tn-launcher .launcher-grid img.tn-sidebar-icon{width:17px!important;height:17px!important;filter:brightness(0) invert(1)!important}
+
+/* Keep sticky sidebar attached to the viewport scroll, not an overflow ancestor */
+html,body{overflow-x:clip!important}
+.app-shell,.workspace{overflow:visible!important}
+.workspace>.left-sidebar,.workspace>.reference-sidebar{position:sticky!important;top:88px!important;align-self:start!important;overflow:visible!important;max-height:none!important}

@@ -139,3 +139,11 @@ body.tn-dark .media-search,body.tn-dark .media-toolbar select,body.tn-dark .refe
 .media-collection span{position:absolute;left:0;right:0;bottom:0;padding:24px 10px 9px;background:linear-gradient(transparent,#11182bd9);color:#fff;font-size:10px;font-weight:800}
 @media(max-width:900px){.media-collections{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:620px){.media-collections{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.media-collection{height:92px}}
+
+/* Home-page sidebar action icons and launcher sizing */
+button.side-link[data-view="home"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/house.svg")!important}
+button.side-link[data-view="jobs"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/file.svg")!important}
+button.side-link[data-view="events"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/calendar-days.svg")!important}
+button.side-link[data-view="saved"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/bookmark.svg")!important}
+button.side-link[data-view]>span{font-size:0!important;color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:17px 17px!important;filter:brightness(0) invert(1)!important}
+.tn-launcher{margin-top:12px}.tn-launcher .launcher-grid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:52px;font-size:9px}.tn-launcher .launcher-grid img{width:17px;height:17px;filter:brightness(0) invert(1)}

@@ -181,3 +181,10 @@ button.side-link[data-view]>span{font-size:0!important;color:transparent!importa
 .side-link>span>.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:18px!important;height:18px!important;fill:currentColor!important;color:#fff!important;filter:none!important}
 .brand-tab>.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:16px!important;height:16px!important;fill:currentColor!important;color:currentColor!important;filter:none!important}
 .tn-launcher .launcher-grid .tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:17px!important;height:17px!important;fill:currentColor!important;color:#fff!important;filter:none!important}
+
+
+/* Direct local SVG image assets copied from MEDIA-ASSETS */
+img.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;object-fit:contain!important;flex:0 0 auto!important;filter:brightness(0) invert(1)!important}
+.left-sidebar .side-link>span>img.tn-sidebar-icon{width:17px!important;height:17px!important}
+.brand-tab>img.tn-sidebar-icon{width:16px!important;height:16px!important;filter:brightness(0) saturate(100%) invert(26%) sepia(26%) saturate(2320%) hue-rotate(220deg) brightness(88%) contrast(91%)!important}
+.tn-launcher .launcher-grid img.tn-sidebar-icon{width:17px!important;height:17px!important;filter:brightness(0) invert(1)!important}

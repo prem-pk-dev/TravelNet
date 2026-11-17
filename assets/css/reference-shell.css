@@ -178,3 +178,24 @@ button.side-link[data-view]>span{font-size:0!important;color:transparent!importa
 @media(max-width:900px){
   .workspace>.left-sidebar,.workspace>.reference-sidebar{display:none!important}
 }
+
+
+/* Local bundled SVG sprite: no remote icon requests */
+.tn-sidebar-icon{
+  display:inline-block!important;visibility:visible!important;opacity:1!important;
+  width:18px!important;height:18px!important;min-width:18px!important;
+  flex:0 0 18px!important;overflow:visible!important;
+  fill:currentColor!important;color:inherit!important;vertical-align:middle!important;
+}
+.left-sidebar .side-link>span{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:22px!important;height:22px!important;min-width:22px!important;flex:0 0 22px!important}
+.left-sidebar .side-link>span .tn-sidebar-icon{width:17px!important;height:17px!important}
+.brand-tab .tn-sidebar-icon{width:16px!important;height:16px!important;color:currentColor!important}
+.tn-launcher .launcher-grid .tn-sidebar-icon{width:17px!important;height:17px!important;color:#fff!important}
+/* The sidebar follows the page scroll and never becomes its own scroll container. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
+  position:sticky!important;top:88px!important;align-self:start!important;
+  height:max-content!important;max-height:none!important;min-height:0!important;
+  overflow:visible!important;overflow-y:visible!important;overflow-x:visible!important;
+  overscroll-behavior:unset!important;scrollbar-width:none!important;
+}
+.workspace>.left-sidebar::-webkit-scrollbar,.workspace>.reference-sidebar::-webkit-scrollbar{display:none!important}

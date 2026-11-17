@@ -1,0 +1,1420 @@
+[
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/serengeti-elephant-safari-sunrise-v01.webp",
+    "path": "images/travel/destinations/serengeti-elephant-safari-sunrise-v01.webp",
+    "title": "African savanna elephant herd at sunrise",
+    "alt": "A herd of elephants walks through golden grass beneath acacia trees at sunrise.",
+    "description": "AI-generated destination artwork inspired by the African savanna; not documentary wildlife photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "africa",
+      "safari",
+      "wildlife",
+      "sunrise"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/alpine-glacial-lake-v01.webp",
+    "path": "images/travel/destinations/alpine-glacial-lake-v01.webp",
+    "title": "Turquoise alpine glacial lake and snowy peaks",
+    "alt": "A turquoise glacial lake reflects snow-covered mountains and evergreen forests.",
+    "description": "AI-generated alpine destination artwork; not a documentary photograph of a specific lake.",
+    "tags": [
+      "travel",
+      "destination",
+      "alpine",
+      "lake",
+      "mountains",
+      "nature"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/santorini-caldera-sunset-v01.webp",
+    "path": "images/travel/destinations/santorini-caldera-sunset-v01.webp",
+    "title": "Santorini-inspired caldera village at sunset",
+    "alt": "Whitewashed cliffside buildings with cobalt-blue domes overlook the sea at sunset.",
+    "description": "AI-generated artwork inspired by Santorini architecture; not a verified photograph of a specific site.",
+    "tags": [
+      "travel",
+      "destination",
+      "greece-inspired",
+      "coast",
+      "sunset",
+      "architecture"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/kyoto-bamboo-garden-v01.webp",
+    "path": "images/travel/destinations/kyoto-bamboo-garden-v01.webp",
+    "title": "Kyoto-inspired bamboo garden pathway",
+    "alt": "A stone path winds through tall bamboo beside a traditional wooden garden gate.",
+    "description": "AI-generated artwork inspired by Japanese bamboo gardens; not a documentary photograph of a specific garden.",
+    "tags": [
+      "travel",
+      "destination",
+      "japan-inspired",
+      "bamboo",
+      "garden",
+      "culture"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/amalfi-coast-village-v01.webp",
+    "path": "images/travel/destinations/amalfi-coast-village-v01.webp",
+    "title": "Amalfi Coast-inspired cliffside village",
+    "alt": "Pastel buildings cascade down a coastal cliff above turquoise Mediterranean water.",
+    "description": "AI-generated coastal artwork inspired by the Amalfi Coast; not a verified photograph of a specific town.",
+    "tags": [
+      "travel",
+      "destination",
+      "italy-inspired",
+      "coast",
+      "village",
+      "mediterranean"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/01-santorini-greece-v01.webp",
+    "path": "images/travel/destinations/01-santorini-greece-v01.webp",
+    "title": "Santorini, Greece",
+    "alt": "Whitewashed buildings and blue-domed churches overlook the Aegean Sea in Santorini.",
+    "description": "AI-generated destination artwork inspired by Santorini, Greece; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "santorini-greece"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/02-banff-canada-v01.webp",
+    "path": "images/travel/destinations/02-banff-canada-v01.webp",
+    "title": "Banff, Canada",
+    "alt": "Turquoise alpine lake surrounded by forested mountains in Banff, Canada.",
+    "description": "AI-generated destination artwork inspired by Banff, Canada; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "banff-canada"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/03-kyoto-japan-v01.webp",
+    "path": "images/travel/destinations/03-kyoto-japan-v01.webp",
+    "title": "Kyoto, Japan",
+    "alt": "Traditional Japanese temple architecture and a serene garden in Kyoto.",
+    "description": "AI-generated destination artwork inspired by Kyoto, Japan; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "kyoto-japan"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/04-amalfi-coast-italy-v01.webp",
+    "path": "images/travel/destinations/04-amalfi-coast-italy-v01.webp",
+    "title": "Amalfi Coast, Italy",
+    "alt": "Colourful coastal village clings to cliffs above the Mediterranean Sea.",
+    "description": "AI-generated destination artwork inspired by Amalfi Coast, Italy; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "amalfi-coast-italy"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/05-serengeti-tanzania-v01.webp",
+    "path": "images/travel/destinations/05-serengeti-tanzania-v01.webp",
+    "title": "Serengeti, Tanzania",
+    "alt": "African savanna landscape with wildlife beneath a wide golden sky.",
+    "description": "AI-generated destination artwork inspired by Serengeti, Tanzania; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "serengeti-tanzania"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/06-machu-picchu-peru-v01.webp",
+    "path": "images/travel/destinations/06-machu-picchu-peru-v01.webp",
+    "title": "Machu Picchu, Peru",
+    "alt": "Ancient Inca stone citadel sits among green Andean mountain peaks.",
+    "description": "AI-generated destination artwork inspired by Machu Picchu, Peru; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "machu-picchu-peru"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/07-maldives-v01.webp",
+    "path": "images/travel/destinations/07-maldives-v01.webp",
+    "title": "Maldives",
+    "alt": "Overwater villas stand above clear turquoise tropical water.",
+    "description": "AI-generated destination artwork inspired by Maldives; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "maldives"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/08-dubai-uae-v01.webp",
+    "path": "images/travel/destinations/08-dubai-uae-v01.webp",
+    "title": "Dubai, UAE",
+    "alt": "Dubai skyline rises above the waterfront in warm evening light.",
+    "description": "AI-generated destination artwork inspired by Dubai, UAE; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "dubai-uae"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/09-tromso-norway-v01.webp",
+    "path": "images/travel/destinations/09-tromso-norway-v01.webp",
+    "title": "Tromsø, Norway",
+    "alt": "Norwegian Arctic landscape beneath colourful northern lights.",
+    "description": "AI-generated destination artwork inspired by Tromsø, Norway; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "troms-norway"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/10-bali-indonesia-v01.webp",
+    "path": "images/travel/destinations/10-bali-indonesia-v01.webp",
+    "title": "Bali, Indonesia",
+    "alt": "Tropical Balinese landscape with lush greenery and traditional architecture.",
+    "description": "AI-generated destination artwork inspired by Bali, Indonesia; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "bali-indonesia"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/11-new-york-usa-v01.webp",
+    "path": "images/travel/destinations/11-new-york-usa-v01.webp",
+    "title": "New York, USA",
+    "alt": "New York City skyline and iconic urban waterfront.",
+    "description": "AI-generated destination artwork inspired by New York, USA; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "new-york-usa"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/12-london-uk-v01.webp",
+    "path": "images/travel/destinations/12-london-uk-v01.webp",
+    "title": "London, UK",
+    "alt": "London cityscape featuring historic architecture along the River Thames.",
+    "description": "AI-generated destination artwork inspired by London, UK; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "london-uk"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/13-petra-jordan-v01.webp",
+    "path": "images/travel/destinations/13-petra-jordan-v01.webp",
+    "title": "Petra, Jordan",
+    "alt": "Rose-red rock-cut architecture framed by the sandstone cliffs of Petra.",
+    "description": "AI-generated destination artwork inspired by Petra, Jordan; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "petra-jordan"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/14-great-wall-china-v01.webp",
+    "path": "images/travel/destinations/14-great-wall-china-v01.webp",
+    "title": "Great Wall, China",
+    "alt": "The Great Wall winds across green mountain ridges in China.",
+    "description": "AI-generated destination artwork inspired by Great Wall, China; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "great-wall-china"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/15-zermatt-switzerland-v01.webp",
+    "path": "images/travel/destinations/15-zermatt-switzerland-v01.webp",
+    "title": "Zermatt, Switzerland",
+    "alt": "The Matterhorn rises above an alpine village in Switzerland.",
+    "description": "AI-generated destination artwork inspired by Zermatt, Switzerland; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "zermatt-switzerland"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/16-cape-town-south-africa-v01.webp",
+    "path": "images/travel/destinations/16-cape-town-south-africa-v01.webp",
+    "title": "Cape Town, South Africa",
+    "alt": "Cape Town coastline and Table Mountain beneath a clear sky.",
+    "description": "AI-generated destination artwork inspired by Cape Town, South Africa; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "cape-town-south-africa"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/17-queenstown-new-zealand-v01.webp",
+    "path": "images/travel/destinations/17-queenstown-new-zealand-v01.webp",
+    "title": "Queenstown, New Zealand",
+    "alt": "Lake Wakatipu and dramatic mountains surround Queenstown.",
+    "description": "AI-generated destination artwork inspired by Queenstown, New Zealand; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "queenstown-new-zealand"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/18-reykjavik-iceland-v01.webp",
+    "path": "images/travel/destinations/18-reykjavik-iceland-v01.webp",
+    "title": "Reykjavik, Iceland",
+    "alt": "Colourful Nordic city buildings set against Icelandic mountain scenery.",
+    "description": "AI-generated destination artwork inspired by Reykjavik, Iceland; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "reykjavik-iceland"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/19-bora-bora-french-polynesia-v01.webp",
+    "path": "images/travel/destinations/19-bora-bora-french-polynesia-v01.webp",
+    "title": "Bora Bora, French Polynesia",
+    "alt": "Tropical lagoon and overwater bungalows beneath a mountain peak.",
+    "description": "AI-generated destination artwork inspired by Bora Bora, French Polynesia; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "bora-bora-french-polynesia"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/20-ha-long-bay-vietnam-v01.webp",
+    "path": "images/travel/destinations/20-ha-long-bay-vietnam-v01.webp",
+    "title": "Ha Long Bay, Vietnam",
+    "alt": "Limestone karst islands rise from emerald water in Ha Long Bay.",
+    "description": "AI-generated destination artwork inspired by Ha Long Bay, Vietnam; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "ha-long-bay-vietnam"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/21-jaipur-india-v01.webp",
+    "path": "images/travel/destinations/21-jaipur-india-v01.webp",
+    "title": "Jaipur, India",
+    "alt": "Historic pink sandstone architecture in Jaipur, Rajasthan.",
+    "description": "AI-generated destination artwork inspired by Jaipur, India; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "jaipur-india"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/22-cappadocia-turkiye-v01.webp",
+    "path": "images/travel/destinations/22-cappadocia-turkiye-v01.webp",
+    "title": "Cappadocia, Türkiye",
+    "alt": "Fairy chimneys and hot-air balloons fill the Cappadocia landscape.",
+    "description": "AI-generated destination artwork inspired by Cappadocia, Türkiye; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "cappadocia-t-rkiye"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/23-lisbon-portugal-v01.webp",
+    "path": "images/travel/destinations/23-lisbon-portugal-v01.webp",
+    "title": "Lisbon, Portugal",
+    "alt": "Lisbon rooftops and historic streets spread across its hillside.",
+    "description": "AI-generated destination artwork inspired by Lisbon, Portugal; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "lisbon-portugal"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/24-rio-de-janeiro-brazil-v01.webp",
+    "path": "images/travel/destinations/24-rio-de-janeiro-brazil-v01.webp",
+    "title": "Rio de Janeiro, Brazil",
+    "alt": "Rio de Janeiro coastline with Sugarloaf Mountain and city scenery.",
+    "description": "AI-generated destination artwork inspired by Rio de Janeiro, Brazil; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "rio-de-janeiro-brazil"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/travel/destinations/25-plitvice-lakes-croatia-v01.webp",
+    "path": "images/travel/destinations/25-plitvice-lakes-croatia-v01.webp",
+    "title": "Plitvice Lakes, Croatia",
+    "alt": "Turquoise lakes and cascading waterfalls flow through a forested national park.",
+    "description": "AI-generated destination artwork inspired by Plitvice Lakes, Croatia; not documentary photography.",
+    "tags": [
+      "travel",
+      "destination",
+      "plitvice-lakes-croatia"
+    ],
+    "category": "travel",
+    "subcategory": "destinations"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/general/general-coffee-lifestyle.webp",
+    "path": "images/general/general-coffee-lifestyle.webp",
+    "title": "General Coffee Lifestyle",
+    "alt": "General Coffee Lifestyle, a visual asset in the general collection.",
+    "description": "AI-generated visual asset for the general image collection.",
+    "tags": [
+      "images",
+      "general",
+      "coffee",
+      "lifestyle"
+    ],
+    "category": "general",
+    "subcategory": "general-coffee-lifestyle.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/general/general-hibiscus-flower.webp",
+    "path": "images/general/general-hibiscus-flower.webp",
+    "title": "General Hibiscus Flower",
+    "alt": "General Hibiscus Flower, a visual asset in the general collection.",
+    "description": "AI-generated visual asset for the general image collection.",
+    "tags": [
+      "images",
+      "general",
+      "hibiscus",
+      "flower"
+    ],
+    "category": "general",
+    "subcategory": "general-hibiscus-flower.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/general/general-mountain-sunset.webp",
+    "path": "images/general/general-mountain-sunset.webp",
+    "title": "General Mountain Sunset",
+    "alt": "General Mountain Sunset, a visual asset in the general collection.",
+    "description": "AI-generated visual asset for the general image collection.",
+    "tags": [
+      "images",
+      "general",
+      "mountain",
+      "sunset"
+    ],
+    "category": "general",
+    "subcategory": "general-mountain-sunset.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/general/general-taj-mahal-landmark.webp",
+    "path": "images/general/general-taj-mahal-landmark.webp",
+    "title": "General Taj Mahal Landmark",
+    "alt": "General Taj Mahal Landmark, a visual asset in the general collection.",
+    "description": "AI-generated visual asset for the general image collection.",
+    "tags": [
+      "images",
+      "general",
+      "taj",
+      "mahal",
+      "landmark"
+    ],
+    "category": "general",
+    "subcategory": "general-taj-mahal-landmark.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/general/general-team-collaboration.webp",
+    "path": "images/general/general-team-collaboration.webp",
+    "title": "General Team Collaboration",
+    "alt": "General Team Collaboration, a visual asset in the general collection.",
+    "description": "AI-generated visual asset for the general image collection.",
+    "tags": [
+      "images",
+      "general",
+      "team",
+      "collaboration"
+    ],
+    "category": "general",
+    "subcategory": "general-team-collaboration.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/01_alpine_lake_sunrise.webp",
+    "path": "images/nature/01_alpine_lake_sunrise.webp",
+    "title": "Alpine Lake Sunrise",
+    "alt": "Alpine Lake Sunrise, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "alpine",
+      "lake",
+      "sunrise"
+    ],
+    "category": "nature",
+    "subcategory": "01_alpine_lake_sunrise.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/02_autumn_oak_meadow.webp",
+    "path": "images/nature/02_autumn_oak_meadow.webp",
+    "title": "Autumn Oak Meadow",
+    "alt": "Autumn Oak Meadow, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "autumn",
+      "oak",
+      "meadow"
+    ],
+    "category": "nature",
+    "subcategory": "02_autumn_oak_meadow.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/03_lavender_field_sunset.webp",
+    "path": "images/nature/03_lavender_field_sunset.webp",
+    "title": "Lavender Field Sunset",
+    "alt": "Lavender Field Sunset, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "lavender",
+      "field",
+      "sunset"
+    ],
+    "category": "nature",
+    "subcategory": "03_lavender_field_sunset.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/04_red_fox_in_meadow.webp",
+    "path": "images/nature/04_red_fox_in_meadow.webp",
+    "title": "Red Fox In Meadow",
+    "alt": "Red Fox In Meadow, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "red",
+      "fox",
+      "in",
+      "meadow"
+    ],
+    "category": "nature",
+    "subcategory": "04_red_fox_in_meadow.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/05_rugged_ocean_cliffs.webp",
+    "path": "images/nature/05_rugged_ocean_cliffs.webp",
+    "title": "Rugged Ocean Cliffs",
+    "alt": "Rugged Ocean Cliffs, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "rugged",
+      "ocean",
+      "cliffs"
+    ],
+    "category": "nature",
+    "subcategory": "05_rugged_ocean_cliffs.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/06_tropical_waterfall.webp",
+    "path": "images/nature/06_tropical_waterfall.webp",
+    "title": "Tropical Waterfall",
+    "alt": "Tropical Waterfall, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "tropical",
+      "waterfall"
+    ],
+    "category": "nature",
+    "subcategory": "06_tropical_waterfall.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/alpine_turquoise_lake.webp",
+    "path": "images/nature/alpine_turquoise_lake.webp",
+    "title": "Alpine Turquoise Lake",
+    "alt": "Alpine Turquoise Lake, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "alpine",
+      "turquoise",
+      "lake"
+    ],
+    "category": "nature",
+    "subcategory": "alpine_turquoise_lake.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/alpine_wildflower_meadow.webp",
+    "path": "images/nature/alpine_wildflower_meadow.webp",
+    "title": "Alpine Wildflower Meadow",
+    "alt": "Alpine Wildflower Meadow, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "alpine",
+      "wildflower",
+      "meadow"
+    ],
+    "category": "nature",
+    "subcategory": "alpine_wildflower_meadow.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/autumn_lake_reflection.webp",
+    "path": "images/nature/autumn_lake_reflection.webp",
+    "title": "Autumn Lake Reflection",
+    "alt": "Autumn Lake Reflection, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "autumn",
+      "lake",
+      "reflection"
+    ],
+    "category": "nature",
+    "subcategory": "autumn_lake_reflection.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/desert_sand_dunes.webp",
+    "path": "images/nature/desert_sand_dunes.webp",
+    "title": "Desert Sand Dunes",
+    "alt": "Desert Sand Dunes, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "desert",
+      "sand",
+      "dunes"
+    ],
+    "category": "nature",
+    "subcategory": "desert_sand_dunes.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/forest_waterfall.webp",
+    "path": "images/nature/forest_waterfall.webp",
+    "title": "Forest Waterfall",
+    "alt": "Forest Waterfall, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "forest",
+      "waterfall"
+    ],
+    "category": "nature",
+    "subcategory": "forest_waterfall.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/kingfisher_on_branch.webp",
+    "path": "images/nature/kingfisher_on_branch.webp",
+    "title": "Kingfisher On Branch",
+    "alt": "Kingfisher On Branch, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "kingfisher",
+      "on",
+      "branch"
+    ],
+    "category": "nature",
+    "subcategory": "kingfisher_on_branch.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/misty_mountain_valley.webp",
+    "path": "images/nature/misty_mountain_valley.webp",
+    "title": "Misty Mountain Valley",
+    "alt": "Misty Mountain Valley, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "misty",
+      "mountain",
+      "valley"
+    ],
+    "category": "nature",
+    "subcategory": "misty_mountain_valley.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/monarch_butterfly_flower.webp",
+    "path": "images/nature/monarch_butterfly_flower.webp",
+    "title": "Monarch Butterfly Flower",
+    "alt": "Monarch Butterfly Flower, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "monarch",
+      "butterfly",
+      "flower"
+    ],
+    "category": "nature",
+    "subcategory": "monarch_butterfly_flower.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/mountain_sunset.webp",
+    "path": "images/nature/mountain_sunset.webp",
+    "title": "Mountain Sunset",
+    "alt": "Mountain Sunset, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "mountain",
+      "sunset"
+    ],
+    "category": "nature",
+    "subcategory": "mountain_sunset.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/northern_lights.webp",
+    "path": "images/nature/northern_lights.webp",
+    "title": "Northern Lights",
+    "alt": "Northern Lights, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "northern",
+      "lights"
+    ],
+    "category": "nature",
+    "subcategory": "northern_lights.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/pink_lotus_pond.webp",
+    "path": "images/nature/pink_lotus_pond.webp",
+    "title": "Pink Lotus Pond",
+    "alt": "Pink Lotus Pond, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "pink",
+      "lotus",
+      "pond"
+    ],
+    "category": "nature",
+    "subcategory": "pink_lotus_pond.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/rocky_forest_stream.webp",
+    "path": "images/nature/rocky_forest_stream.webp",
+    "title": "Rocky Forest Stream",
+    "alt": "Rocky Forest Stream, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "rocky",
+      "forest",
+      "stream"
+    ],
+    "category": "nature",
+    "subcategory": "rocky_forest_stream.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/snowy_mountain_peaks.webp",
+    "path": "images/nature/snowy_mountain_peaks.webp",
+    "title": "Snowy Mountain Peaks",
+    "alt": "Snowy Mountain Peaks, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "snowy",
+      "mountain",
+      "peaks"
+    ],
+    "category": "nature",
+    "subcategory": "snowy_mountain_peaks.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/sunbeams_through_clouds.webp",
+    "path": "images/nature/sunbeams_through_clouds.webp",
+    "title": "Sunbeams Through Clouds",
+    "alt": "Sunbeams Through Clouds, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "sunbeams",
+      "through",
+      "clouds"
+    ],
+    "category": "nature",
+    "subcategory": "sunbeams_through_clouds.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/sunflower_field.webp",
+    "path": "images/nature/sunflower_field.webp",
+    "title": "Sunflower Field",
+    "alt": "Sunflower Field, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "sunflower",
+      "field"
+    ],
+    "category": "nature",
+    "subcategory": "sunflower_field.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/sunlit_forest_path.webp",
+    "path": "images/nature/sunlit_forest_path.webp",
+    "title": "Sunlit Forest Path",
+    "alt": "Sunlit Forest Path, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "sunlit",
+      "forest",
+      "path"
+    ],
+    "category": "nature",
+    "subcategory": "sunlit_forest_path.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/terraced_green_hills.webp",
+    "path": "images/nature/terraced_green_hills.webp",
+    "title": "Terraced Green Hills",
+    "alt": "Terraced Green Hills, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "terraced",
+      "green",
+      "hills"
+    ],
+    "category": "nature",
+    "subcategory": "terraced_green_hills.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/tropical_white_sand_beach.webp",
+    "path": "images/nature/tropical_white_sand_beach.webp",
+    "title": "Tropical White Sand Beach",
+    "alt": "Tropical White Sand Beach, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "tropical",
+      "white",
+      "sand",
+      "beach"
+    ],
+    "category": "nature",
+    "subcategory": "tropical_white_sand_beach.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/nature/wild_deer_in_forest.webp",
+    "path": "images/nature/wild_deer_in_forest.webp",
+    "title": "Wild Deer In Forest",
+    "alt": "Wild Deer In Forest, a visual asset in the nature collection.",
+    "description": "AI-generated visual asset for the nature image collection.",
+    "tags": [
+      "images",
+      "nature",
+      "wild",
+      "deer",
+      "in",
+      "forest"
+    ],
+    "category": "nature",
+    "subcategory": "wild_deer_in_forest.webp"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/events/event-bridal-portrait-floral-venue.webp",
+    "path": "images/photography/events/event-bridal-portrait-floral-venue.webp",
+    "title": "Event Bridal Portrait Floral Venue",
+    "alt": "Event Bridal Portrait Floral Venue, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "events",
+      "event",
+      "bridal",
+      "portrait",
+      "floral",
+      "venue"
+    ],
+    "category": "photography",
+    "subcategory": "events"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/events/event-wedding-ceremony-couple.webp",
+    "path": "images/photography/events/event-wedding-ceremony-couple.webp",
+    "title": "Event Wedding Ceremony Couple",
+    "alt": "Event Wedding Ceremony Couple, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "events",
+      "event",
+      "wedding",
+      "ceremony",
+      "couple"
+    ],
+    "category": "photography",
+    "subcategory": "events"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/events/event-wedding-couple-portrait.webp",
+    "path": "images/photography/events/event-wedding-couple-portrait.webp",
+    "title": "Event Wedding Couple Portrait",
+    "alt": "Event Wedding Couple Portrait, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "events",
+      "event",
+      "wedding",
+      "couple",
+      "portrait"
+    ],
+    "category": "photography",
+    "subcategory": "events"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/events/event-wedding-processional-celebration.webp",
+    "path": "images/photography/events/event-wedding-processional-celebration.webp",
+    "title": "Event Wedding Processional Celebration",
+    "alt": "Event Wedding Processional Celebration, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "events",
+      "event",
+      "wedding",
+      "processional",
+      "celebration"
+    ],
+    "category": "photography",
+    "subcategory": "events"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/events/event-wedding-proposal-celebration.webp",
+    "path": "images/photography/events/event-wedding-proposal-celebration.webp",
+    "title": "Event Wedding Proposal Celebration",
+    "alt": "Event Wedding Proposal Celebration, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "events",
+      "event",
+      "wedding",
+      "proposal",
+      "celebration"
+    ],
+    "category": "photography",
+    "subcategory": "events"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/portraits/portrait-golden-hour.webp",
+    "path": "images/photography/portraits/portrait-golden-hour.webp",
+    "title": "Portrait Golden Hour",
+    "alt": "Portrait Golden Hour, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "portraits",
+      "portrait",
+      "golden",
+      "hour"
+    ],
+    "category": "photography",
+    "subcategory": "portraits"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/portraits/portrait-indoor-natural-light.webp",
+    "path": "images/photography/portraits/portrait-indoor-natural-light.webp",
+    "title": "Portrait Indoor Natural Light",
+    "alt": "Portrait Indoor Natural Light, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "portraits",
+      "portrait",
+      "indoor",
+      "natural",
+      "light"
+    ],
+    "category": "photography",
+    "subcategory": "portraits"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/portraits/portrait-monochrome-window.webp",
+    "path": "images/photography/portraits/portrait-monochrome-window.webp",
+    "title": "Portrait Monochrome Window",
+    "alt": "Portrait Monochrome Window, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "portraits",
+      "portrait",
+      "monochrome",
+      "window"
+    ],
+    "category": "photography",
+    "subcategory": "portraits"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/portraits/portrait-studio-classic.webp",
+    "path": "images/photography/portraits/portrait-studio-classic.webp",
+    "title": "Portrait Studio Classic",
+    "alt": "Portrait Studio Classic, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "portraits",
+      "portrait",
+      "studio",
+      "classic"
+    ],
+    "category": "photography",
+    "subcategory": "portraits"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/portraits/portrait-urban-daylight.webp",
+    "path": "images/photography/portraits/portrait-urban-daylight.webp",
+    "title": "Portrait Urban Daylight",
+    "alt": "Portrait Urban Daylight, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "portraits",
+      "portrait",
+      "urban",
+      "daylight"
+    ],
+    "category": "photography",
+    "subcategory": "portraits"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/pre-wedding/prewedding-beach-walk.webp",
+    "path": "images/photography/pre-wedding/prewedding-beach-walk.webp",
+    "title": "Prewedding Beach Walk",
+    "alt": "Prewedding Beach Walk, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "pre-wedding",
+      "prewedding",
+      "beach",
+      "walk"
+    ],
+    "category": "photography",
+    "subcategory": "pre-wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/pre-wedding/prewedding-hillside-sunset.webp",
+    "path": "images/photography/pre-wedding/prewedding-hillside-sunset.webp",
+    "title": "Prewedding Hillside Sunset",
+    "alt": "Prewedding Hillside Sunset, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "pre-wedding",
+      "prewedding",
+      "hillside",
+      "sunset"
+    ],
+    "category": "photography",
+    "subcategory": "pre-wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/pre-wedding/prewedding-lakeside-picnic.webp",
+    "path": "images/photography/pre-wedding/prewedding-lakeside-picnic.webp",
+    "title": "Prewedding Lakeside Picnic",
+    "alt": "Prewedding Lakeside Picnic, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "pre-wedding",
+      "prewedding",
+      "lakeside",
+      "picnic"
+    ],
+    "category": "photography",
+    "subcategory": "pre-wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/pre-wedding/prewedding-stringlight-portrait.webp",
+    "path": "images/photography/pre-wedding/prewedding-stringlight-portrait.webp",
+    "title": "Prewedding Stringlight Portrait",
+    "alt": "Prewedding Stringlight Portrait, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "pre-wedding",
+      "prewedding",
+      "stringlight",
+      "portrait"
+    ],
+    "category": "photography",
+    "subcategory": "pre-wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/pre-wedding/prewedding-woodland-embrace.webp",
+    "path": "images/photography/pre-wedding/prewedding-woodland-embrace.webp",
+    "title": "Prewedding Woodland Embrace",
+    "alt": "Prewedding Woodland Embrace, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "pre-wedding",
+      "prewedding",
+      "woodland",
+      "embrace"
+    ],
+    "category": "photography",
+    "subcategory": "pre-wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/wedding/wedding-chapel-ceremony.webp",
+    "path": "images/photography/wedding/wedding-chapel-ceremony.webp",
+    "title": "Wedding Chapel Ceremony",
+    "alt": "Wedding Chapel Ceremony, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "wedding",
+      "chapel",
+      "ceremony"
+    ],
+    "category": "photography",
+    "subcategory": "wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/wedding/wedding-garden-portrait.webp",
+    "path": "images/photography/wedding/wedding-garden-portrait.webp",
+    "title": "Wedding Garden Portrait",
+    "alt": "Wedding Garden Portrait, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "wedding",
+      "garden",
+      "portrait"
+    ],
+    "category": "photography",
+    "subcategory": "wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/wedding/wedding-reception-laughter.webp",
+    "path": "images/photography/wedding/wedding-reception-laughter.webp",
+    "title": "Wedding Reception Laughter",
+    "alt": "Wedding Reception Laughter, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "wedding",
+      "reception",
+      "laughter"
+    ],
+    "category": "photography",
+    "subcategory": "wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/wedding/wedding-rings-bouquet.webp",
+    "path": "images/photography/wedding/wedding-rings-bouquet.webp",
+    "title": "Wedding Rings Bouquet",
+    "alt": "Wedding Rings Bouquet, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "wedding",
+      "rings",
+      "bouquet"
+    ],
+    "category": "photography",
+    "subcategory": "wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/photography/wedding/wedding-sunset-kiss.webp",
+    "path": "images/photography/wedding/wedding-sunset-kiss.webp",
+    "title": "Wedding Sunset Kiss",
+    "alt": "Wedding Sunset Kiss, a visual asset in the photography collection.",
+    "description": "AI-generated visual asset for the photography image collection.",
+    "tags": [
+      "images",
+      "photography",
+      "wedding",
+      "sunset",
+      "kiss"
+    ],
+    "category": "photography",
+    "subcategory": "wedding"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/backgrounds/technology-ai-microchip.webp",
+    "path": "images/technology/backgrounds/technology-ai-microchip.webp",
+    "title": "Technology Ai Microchip",
+    "alt": "Technology Ai Microchip, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "backgrounds",
+      "ai",
+      "microchip"
+    ],
+    "category": "technology",
+    "subcategory": "backgrounds"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/backgrounds/technology-cloud-computing.webp",
+    "path": "images/technology/backgrounds/technology-cloud-computing.webp",
+    "title": "Technology Cloud Computing",
+    "alt": "Technology Cloud Computing, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "backgrounds",
+      "cloud",
+      "computing"
+    ],
+    "category": "technology",
+    "subcategory": "backgrounds"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/backgrounds/technology-data-center.webp",
+    "path": "images/technology/backgrounds/technology-data-center.webp",
+    "title": "Technology Data Center",
+    "alt": "Technology Data Center, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "backgrounds",
+      "data",
+      "center"
+    ],
+    "category": "technology",
+    "subcategory": "backgrounds"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/backgrounds/technology-developer-workspace.webp",
+    "path": "images/technology/backgrounds/technology-developer-workspace.webp",
+    "title": "Technology Developer Workspace",
+    "alt": "Technology Developer Workspace, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "backgrounds",
+      "developer",
+      "workspace"
+    ],
+    "category": "technology",
+    "subcategory": "backgrounds"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/backgrounds/technology-global-network.webp",
+    "path": "images/technology/backgrounds/technology-global-network.webp",
+    "title": "Technology Global Network",
+    "alt": "Technology Global Network, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "backgrounds",
+      "global",
+      "network"
+    ],
+    "category": "technology",
+    "subcategory": "backgrounds"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/devices/device-camera-drone.webp",
+    "path": "images/technology/devices/device-camera-drone.webp",
+    "title": "Device Camera Drone",
+    "alt": "Device Camera Drone, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "devices",
+      "device",
+      "camera",
+      "drone"
+    ],
+    "category": "technology",
+    "subcategory": "devices"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/devices/device-desktop-gaming-workstation.webp",
+    "path": "images/technology/devices/device-desktop-gaming-workstation.webp",
+    "title": "Device Desktop Gaming Workstation",
+    "alt": "Device Desktop Gaming Workstation, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "devices",
+      "device",
+      "desktop",
+      "gaming",
+      "workstation"
+    ],
+    "category": "technology",
+    "subcategory": "devices"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/devices/device-laptop-workstation.webp",
+    "path": "images/technology/devices/device-laptop-workstation.webp",
+    "title": "Device Laptop Workstation",
+    "alt": "Device Laptop Workstation, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "devices",
+      "device",
+      "laptop",
+      "workstation"
+    ],
+    "category": "technology",
+    "subcategory": "devices"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/devices/device-smartphone-display.webp",
+    "path": "images/technology/devices/device-smartphone-display.webp",
+    "title": "Device Smartphone Display",
+    "alt": "Device Smartphone Display, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "devices",
+      "device",
+      "smartphone",
+      "display"
+    ],
+    "category": "technology",
+    "subcategory": "devices"
+  },
+  {
+    "src": "https://media-assets-4sb.pages.dev/images/technology/devices/device-virtual-reality-headset.webp",
+    "path": "images/technology/devices/device-virtual-reality-headset.webp",
+    "title": "Device Virtual Reality Headset",
+    "alt": "Device Virtual Reality Headset, a visual asset in the technology collection.",
+    "description": "AI-generated visual asset for the technology image collection.",
+    "tags": [
+      "images",
+      "technology",
+      "devices",
+      "device",
+      "virtual",
+      "reality",
+      "headset"
+    ],
+    "category": "technology",
+    "subcategory": "devices"
+  }
+]

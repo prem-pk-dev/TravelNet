@@ -24,6 +24,16 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 - Local connection invitation state and pending invitation list
 - Illustrative sample profiles are labelled as demo content
 
+### TravelNet Stories
+- Stories feed with category discovery and visual story cards
+- Separate create, viewer, My Stories, Highlights, Insights and Privacy screens
+- Photo/video/text story composer with local draft and publishing states
+- 24-hour expiry metadata, active/expired/archive views and profile highlight collections
+- Local demo reactions, replies, view counters and share controls
+- Public, Connections and Custom Audience selection UI with explicit frontend-only privacy limitations
+- Uses the supplied Cloudflare Pages WebP asset URLs for travel and nature story imagery
+- Story metadata and preferences remain browser-local; no shared upload, account permissions or real-time delivery is connected
+
 ### Messaging and notifications UI
 - Separate `messages.html` inbox and `conversation.html` conversation view
 - Searchable inbox with unread filter and browser-local conversation state
@@ -58,6 +68,13 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
 
     TravelNet/
     ├── index.html
+    ├── stories.html
+    ├── story-create.html
+    ├── story-viewer.html
+    ├── my-stories.html
+    ├── story-highlights.html
+    ├── story-insights.html
+    ├── story-settings.html
     ├── login.html
     ├── signup.html
     ├── onboarding.html
@@ -69,12 +86,14 @@ TravelNet is a mobile-first, multi-page static frontend concept for travel and t
     ├── community.html
     ├── research/phase-01-linkedin-homepage.md
     ├── assets/css/styles.css
+    ├── assets/css/stories.css
     ├── assets/css/home-discovery.css
     ├── assets/css/auth.css
     ├── assets/css/network.css
     ├── assets/css/business.css
     ├── assets/css/groups.css
     ├── assets/js/app.js
+    ├── assets/js/story-app.js
     ├── assets/js/auth.js
     ├── assets/js/network.js
     ├── assets/js/business.js

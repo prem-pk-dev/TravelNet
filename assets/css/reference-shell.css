@@ -80,3 +80,4 @@ body.tn-dark .panel,body.tn-dark .home-stories,body.tn-dark .home-community-card
 body.tn-dark h2,body.tn-dark h3,body.tn-dark .home-community-card strong,body.tn-dark .reference-card-copy h3{color:#edf0ff}
 body.tn-dark .media-card p,body.tn-dark .reference-card-copy p,body.tn-dark .home-community-card p{color:#b5bdd5}
 @media(max-width:900px){.left-sidebar .launcher-grid{display:none}}
+.workspace>.story-page{max-width:none;margin:20px 0;padding:0 12px}.reference-sidebar{flex:none}.reference-sidebar .theme-switch{margin-top:12px}

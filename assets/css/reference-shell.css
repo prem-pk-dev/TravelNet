@@ -1,0 +1,74 @@
+/* TravelNet reference-aligned workspace shell */
+:root{--tn-purple:#6039c9;--tn-blue:#2678d7;--tn-ink:#20263a;--tn-muted:#778096;--tn-line:#e7eaf2;--tn-paper:#f3f5fb;--tn-card:#fff}
+body{background:var(--tn-paper);color:var(--tn-ink)}
+.topbar{height:70px;gap:22px;padding:0 max(20px,calc((100vw - 1540px)/2));box-shadow:0 3px 16px rgba(35,42,76,.045);border-bottom:1px solid #e9ebf2}
+.brand{color:#4c35a5;flex:none}
+.brand-light{color:#7b75a7}
+.global-search{width:min(320px,25vw);background:#f6f7fc;border-color:#e8eaf3;border-radius:12px}
+.brand-tabs{display:flex;align-items:center;gap:6px;margin-left:auto}
+.brand-tab{display:flex;align-items:center;gap:7px;padding:9px 11px;border-radius:11px;color:#68718a;text-decoration:none;font-size:11px;font-weight:700;white-space:nowrap}
+.brand-tab span{font-size:17px}
+.brand-tab:hover,.brand-tab.active{background:#f0edff;color:#5639bb}
+.top-actions{margin-left:8px}
+.top-actions .icon-button{color:#59617a}
+.workspace{max-width:1540px;grid-template-columns:248px minmax(0,1fr);gap:20px;margin:18px auto;padding:0 20px}
+.left-sidebar{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 105px);overflow:auto;padding:14px 13px 16px;border-radius:20px;background:linear-gradient(158deg,#5938bf 0%,#3e58c9 48%,#257cda 100%);box-shadow:0 14px 32px rgba(66,67,160,.18);color:#fff;scrollbar-width:thin;scrollbar-color:#ffffff55 transparent}
+.left-sidebar .profile-mini.panel{background:#ffffff18;border:1px solid #ffffff2b;box-shadow:none;color:#fff;border-radius:15px}
+.left-sidebar .profile-cover{height:46px;background:linear-gradient(120deg,#ffffff12,#ffffff2b)}
+.left-sidebar .profile-cover:after{border-color:#ffffff55;box-shadow:0 0 0 13px #ffffff12,0 0 0 29px #ffffff0a}
+.left-sidebar .profile-mini-body{padding:0 13px 13px}
+.left-sidebar .avatar{background:#fff;color:#5540a8;border-color:#fff}
+.left-sidebar .profile-mini-body strong{color:#fff}
+.left-sidebar .muted,.left-sidebar .profile-mini-body small{color:#e3e5ff}
+.left-sidebar .profile-progress{background:#ffffff3d}
+.left-sidebar .profile-progress span{background:#b9f3e0}
+.left-sidebar .text-link{color:#fff}
+.left-sidebar .side-section{padding:17px 2px 4px}
+.left-sidebar .side-label{color:#d8d9ff;font-size:8px;letter-spacing:1.5px}
+.left-sidebar .side-link{color:#f4f3ff;height:36px;border-radius:9px;font-size:11px;gap:10px}
+.left-sidebar .side-link>span{color:#e1ddff}
+.left-sidebar .side-link:hover,.left-sidebar .side-link.active{background:#ffffff24;color:#fff}
+.left-sidebar .side-link b{color:#fff}
+.left-sidebar .sidebar-note{background:#ffffff18;border:1px solid #ffffff25;color:#fff;margin-top:14px}
+.left-sidebar .sidebar-note p{color:#e0e4ff}
+.left-sidebar .side-footer{color:#d7dcff;line-height:1.8}
+.main-content{min-width:0}
+.welcome-banner{min-height:255px;border-radius:20px;background:linear-gradient(115deg,#4e35ad 0%,#4264cb 55%,#2494d5 100%);box-shadow:0 12px 30px rgba(71,80,180,.15);padding:30px 34px;color:#fff;overflow:hidden}
+.welcome-banner .eyebrow{color:#d8d8ff}
+.welcome-banner h1{color:#fff;font-size:36px;letter-spacing:-1.6px}
+.welcome-banner h1 em{color:#b6f4e0}
+.welcome-banner p{color:#e7eaff;max-width:440px}
+.welcome-banner .button-light{background:#fff;color:#4d3cb1;border-radius:10px}
+.banner-art .globe{background:radial-gradient(circle at 35% 28%,#fff,#b8c8ff 30%,#5e67c8 65%,#303d91);box-shadow:0 20px 70px #171b5b70}
+.banner-art .orbit{border-color:#ffffff4a}
+.banner-index{color:#e0e5ff}
+.home-stories,.feed-column>.panel,.feed-column .composer{border-radius:16px}
+.home-stories{background:#fff;border:1px solid var(--tn-line);padding:20px;margin-top:18px}
+.home-stories-heading h2,.section-heading h2,.home-section-heading h2{color:var(--tn-ink)}
+.home-stories-heading p{color:var(--tn-muted)}
+.home-story-card,.home-story-create{border-radius:13px}
+.panel{border-color:var(--tn-line);box-shadow:0 5px 18px rgba(41,50,88,.035)}
+.feed-layout{gap:18px;margin-top:20px;grid-template-columns:minmax(0,1.55fr) minmax(250px,.85fr)}
+.composer-prompt{border-radius:24px;background:#f7f8fc;border-color:#e9ebf2}
+.composer-actions button{border-radius:9px}
+.section-heading h2{font-size:21px}
+.right-column{gap:14px}
+.right-column .panel{border-radius:15px;padding:17px}
+.right-column h3{color:#29304a}
+.person-row{border-color:#edf0f6}
+.topic-row{border-color:#edf0f6}
+.join-card{border-radius:16px;background:linear-gradient(140deg,#4c37b6,#2d7bd0);color:#fff;padding:20px}
+.join-card .eyebrow,.join-card p{color:#e0e6ff}
+.join-card h3{color:#fff}
+.join-card .button-dark{background:#fff;color:#4e3bb1;border-radius:9px}
+.right-footer{color:#8991a5}
+.home-discovery-section{margin-top:28px}
+.home-community-card,.home-business-strip{border-color:var(--tn-line);border-radius:15px;box-shadow:0 5px 18px rgba(41,50,88,.035)}
+.home-community-card:hover{border-color:#c7c0f1}
+.home-industry-note{background:linear-gradient(110deg,#ece9ff,#e7f3ff);border-radius:16px}
+.home-industry-note .eyebrow{color:#6454b1}
+.button-dark{background:linear-gradient(110deg,#5b3bc2,#327bd1);border-radius:9px}
+.mobile-nav{box-shadow:0 -4px 20px rgba(38,48,90,.09)}
+@media(max-width:1120px){.workspace{grid-template-columns:220px minmax(0,1fr)}.brand-tabs{gap:1px}.brand-tab{padding:8px}.brand-tab span{font-size:15px}.brand-tab{font-size:10px}}
+@media(max-width:900px){.topbar{gap:12px}.brand-tabs{display:none}.global-search{width:min(400px,45vw)}.workspace{grid-template-columns:1fr}.left-sidebar{display:none}.feed-layout{grid-template-columns:minmax(0,1fr) minmax(230px,.75fr)}}
+@media(max-width:680px){.topbar{height:62px;padding:0 12px}.brand{font-size:19px}.brand-mark{width:31px;height:31px}.brand small{display:none}.global-search-wrap{display:none}.workspace{margin:10px auto;padding:0 12px}.welcome-banner{min-height:230px;padding:24px 20px}.welcome-banner h1{font-size:29px}.banner-art{opacity:.45;right:-35px}.feed-layout{grid-template-columns:1fr}.right-column{grid-template-columns:1fr}.home-stories{padding:15px}.home-stories-heading{align-items:flex-start}.home-story-row{overflow-x:auto}.home-story-card{min-width:122px}.top-actions{gap:3px}.auth-nav-link{display:none}}

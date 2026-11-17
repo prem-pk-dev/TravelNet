@@ -147,3 +147,34 @@ button.side-link[data-view="events"]>span{background-image:url("https://media-as
 button.side-link[data-view="saved"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/bookmark.svg")!important}
 button.side-link[data-view]>span{font-size:0!important;color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:17px 17px!important;filter:brightness(0) invert(1)!important}
 .tn-launcher{margin-top:12px}.tn-launcher .launcher-grid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:52px;font-size:9px}.tn-launcher .launcher-grid img{width:17px;height:17px;filter:brightness(0) invert(1)}
+
+
+/* Sidebar correction: keep the navigation pinned during document scrolling without a nested scroll area. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
+  position:sticky!important;top:88px!important;align-self:start!important;
+  height:max-content!important;max-height:none!important;
+  overflow:visible!important;overscroll-behavior:unset!important;
+}
+/* Render the real SVG files from MEDIA-ASSETS visibly and consistently. */
+.left-sidebar .side-link>span{
+  width:22px!important;height:22px!important;min-width:22px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 0 22px!important;font-size:0!important;color:transparent!important;
+  background-repeat:no-repeat!important;background-position:center!important;background-size:18px 18px!important;
+}
+.left-sidebar .side-link>span>.tn-sidebar-icon{
+  display:block!important;visibility:visible!important;opacity:1!important;
+  width:18px!important;height:18px!important;min-width:18px!important;
+  object-fit:contain!important;filter:brightness(0) invert(1)!important;
+}
+.left-sidebar .launcher-grid img{
+  display:block!important;visibility:visible!important;opacity:1!important;
+  width:17px!important;height:17px!important;object-fit:contain!important;
+}
+.brand-tabs .brand-tab img{
+  display:block!important;visibility:visible!important;opacity:1!important;
+  width:17px!important;height:17px!important;object-fit:contain!important;
+}
+@media(max-width:900px){
+  .workspace>.left-sidebar,.workspace>.reference-sidebar{display:none!important}
+}

@@ -193,3 +193,48 @@ img.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity
 html,body{overflow-x:clip!important}
 .app-shell,.workspace{overflow:visible!important}
 .workspace>.left-sidebar,.workspace>.reference-sidebar{position:sticky!important;top:88px!important;align-self:start!important;overflow:visible!important;max-height:none!important}
+
+
+/* Topbar: use the modern local SVG icon files */
+.top-actions .tn-sidebar-icon{width:19px!important;height:19px!important;min-width:19px!important;filter:none!important;opacity:.88;object-fit:contain}
+.top-actions .icon-button{display:inline-flex;align-items:center;justify-content:center;position:relative}
+.top-actions .notification-dot{right:5px;top:5px}
+
+/* The profile card stays pinned while the sidebar navigation scrolls underneath it. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
+  position:sticky!important;top:88px!important;align-self:start!important;
+  height:calc(100vh - 100px)!important;max-height:calc(100vh - 100px)!important;
+  overflow-x:hidden!important;overflow-y:auto!important;
+  overscroll-behavior:contain!important;scrollbar-width:thin!important;
+  scrollbar-color:rgba(91,66,184,.28) transparent!important;
+}
+.workspace>.left-sidebar .profile-mini,.workspace>.reference-sidebar .profile-mini{
+  position:sticky!important;top:0!important;z-index:8!important;
+  margin-bottom:8px!important;box-shadow:0 8px 18px rgba(34,28,84,.12)!important;
+}
+.workspace>.left-sidebar::-webkit-scrollbar,.workspace>.reference-sidebar::-webkit-scrollbar{width:5px}
+.workspace>.left-sidebar::-webkit-scrollbar-thumb,.workspace>.reference-sidebar::-webkit-scrollbar-thumb{background:rgba(91,66,184,.25);border-radius:10px}
+
+/* Richer TravelNet category cards: destination photography fades into a clean readable card body. */
+.home-community-card{
+  min-height:245px!important;padding-top:108px!important;
+  background-repeat:no-repeat!important;
+  background-size:100% 136px,100% 136px!important;
+  background-position:top center!important;
+  border-color:#e4e7f2!important;
+}
+.home-community-grid .home-community-card:nth-child(1){
+  background-image:linear-gradient(to bottom,rgba(255,255,255,.04) 0%,rgba(255,255,255,.18) 42%,#fff 100%),url("https://media-assets-4sb.pages.dev/thumbnails/travel-mountain-hiker.webp")!important;
+}
+.home-community-grid .home-community-card:nth-child(2){
+  background-image:linear-gradient(to bottom,rgba(255,255,255,.04) 0%,rgba(255,255,255,.18) 42%,#fff 100%),url("https://media-assets-4sb.pages.dev/thumbnails/travel-luxury-hotel.webp")!important;
+}
+.home-community-grid .home-community-card:nth-child(3){
+  background-image:linear-gradient(to bottom,rgba(255,255,255,.04) 0%,rgba(255,255,255,.18) 42%,#fff 100%),url("https://media-assets-4sb.pages.dev/thumbnails/technology-cloud.webp")!important;
+}
+.home-community-card .home-community-icon{box-shadow:0 4px 14px rgba(31,36,70,.12);border:1px solid rgba(255,255,255,.85)}
+.reference-card{box-shadow:0 8px 24px rgba(42,49,91,.08)!important;border-color:#e6e9f3!important}
+.reference-card-copy{background:linear-gradient(180deg,#fff 0%,#fbfbff 100%)!important}
+.reference-metrics article{background:linear-gradient(135deg,#fff 0%,#f4f2ff 100%)!important;border-color:#e8e4fa!important;box-shadow:0 4px 16px rgba(59,51,112,.05)}
+@media(max-width:900px){.workspace>.left-sidebar,.workspace>.reference-sidebar{display:none!important}}
+@media(max-width:700px){.home-community-card{min-height:220px!important;padding-top:105px!important}}

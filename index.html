@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/reference-shell.css">
 <link rel="stylesheet" href="assets/css/home-discovery.css">
 <link rel="stylesheet" href="assets/css/global-search.css">
 <link rel="stylesheet" href="assets/css/stories.css">
@@ -22,6 +23,7 @@
       <span>travel<span class="brand-light">net</span><small>THE TRAVEL INDUSTRY NETWORK</small></span>
     </a>
     <div class="global-search-wrap"><label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="globalSearch" type="search" aria-controls="globalSearchResults" aria-expanded="false" placeholder="Search people, companies, groups..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label><div id="globalSearchResults" class="global-search-results" role="listbox" aria-label="Search suggestions" hidden></div></div>
+    <nav class="brand-tabs" aria-label="TravelNet sections"><a class="brand-tab active" href="index.html"><span>⌂</span>Home</a><a class="brand-tab" href="reels.html"><span>▣</span>Reels</a><a class="brand-tab" href="watch.html"><span>▷</span>Watch</a><a class="brand-tab" href="stories.html"><span>◉</span>Stories</a><a class="brand-tab" href="network.html"><span>♧</span>People</a></nav>
     <nav class="top-actions" aria-label="Quick actions">
       <button class="icon-button mobile-search" data-action="search" aria-label="Search"><span>⌕</span></button>
       <a class="icon-button" href="notifications.html" aria-label="Notifications"><span>♧</span><i class="notification-dot"></i></a>
@@ -46,6 +48,8 @@
       <div class="side-section">
         <p class="side-label">YOUR NETWORK</p>
         <button class="side-link active" data-view="home"><span>⌂</span> Home feed</button>
+        <a class="side-link" href="reels.html"><span>▣</span> Reels &amp; Media</a>
+        <a class="side-link" href="watch.html"><span>▷</span> Watch</a>
         <a class="side-link" href="stories.html"><span>◉</span> Stories</a>
         <a class="side-link" href="network.html"><span>♧</span> My network</a>
         <a class="side-link" href="groups.html"><span>◎</span> Communities</a>
@@ -58,7 +62,11 @@
         <button class="side-link" data-view="saved"><span>◇</span> Saved items</button>
         <a class="side-link" href="messages.html"><span>▤</span> Messages</a>
         <a class="side-link" href="notifications.html"><span>♧</span> Notifications</a>
-        <a class="side-link" href="profile.html"><span>◉</span> My profile</a>
+        <a class="side-link" href="media.html"><span>◇</span> Media &amp; Saved</a>
+        <a class="side-link" href="events.html"><span>◷</span> Events</a>
+        <a class="side-link" href="jobs.html"><span>▣</span> Jobs</a>
+        <a class="side-link" href="cyborg.html"><span>✳</span> Cyborg tools</a>
+        <a class="side-link" href="profile.html"><span>◉</span> My profile &amp; settings</a>
       </div>
       <div class="sidebar-note">
         <span class="note-icon">✳</span>
@@ -66,6 +74,7 @@
         <p>Meet the people and businesses moving travel forward.</p>
       </div>
       <div class="side-footer">About · Community guidelines · Privacy<br>© 2026 TravelNet</div>
+      <div class="side-section"><p class="side-label">ALIENS APP LAUNCHER</p><div class="launcher-grid"><a href="profile.html">ID</a><a href="companies.html">Company</a><a href="cyborg.html">Code</a><a href="work.html">Project</a><a href="jobs.html">Task</a><a href="learn.html">Score</a><a href="media.html">Drive</a></div><button class="theme-switch" data-theme-toggle>☼ Switch theme</button></div>
     </aside>
 
     <main id="mainContent" class="main-content">
@@ -129,7 +138,10 @@
           <section class="join-card">
             <span class="eyebrow">BUILT FOR THE INDUSTRY</span><h3>Your next partnership could start here.</h3><p>Find the right community for your work in travel.</p><a class="button button-dark" href="companies.html">Explore companies ↗</a>
           </section>
-          <div class="right-footer">About · Help · Guidelines · Privacy<br>TravelNet is an independent professional network concept.</div>
+          <section class="panel purpose-panel"><span class="eyebrow dark-eyebrow">LEARN WITH PURPOSE</span><h3>Travel advisor pathway</h3><div class="purpose-progress"><span style="width:38%"></span></div><small>3 of 8 learning steps · Demo progress</small><a class="full-link" href="learn.html">Continue learning →</a></section>
+          <section class="panel purpose-panel"><span class="eyebrow dark-eyebrow">COMMUNITY EVENTS</span><h3>Industry meetups</h3><p>Destination exchange · Responsible tourism · Travel tech</p><a class="full-link" href="events.html">Explore events →</a></section>
+          <section class="panel purpose-panel"><span class="eyebrow dark-eyebrow">RELEVANT OPPORTUNITIES</span><h3>Work across travel</h3><p>Explore sample roles in operations, hospitality and destination management.</p><a class="full-link" href="work.html">Explore work →</a></section>
+          <div class="right-footer">About · Help · Guidelines · Privacy<br>TravelNet is an independent professional network concept. Demo data only.</div>
         </aside>
       </div>
 
@@ -162,7 +174,7 @@
 
 <nav class="mobile-nav" aria-label="Mobile navigation">
   <button class="selected" data-view="home"><span>⌂</span>Home</button>
-  <a href="network.html"><span>♧</span>Network</a>
+  <a href="reels.html"><span>▣</span>Reels</a><a href="watch.html"><span>▷</span>Watch</a><a href="network.html"><span>♧</span>People</a>
   <button data-action="compose"><span class="mobile-create">+</span>Create</button>
   <a href="groups.html"><span>◎</span>Groups</a>
   <a href="profile.html"><span>◉</span>Profile</a>

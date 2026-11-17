@@ -290,3 +290,103 @@ a:not(.brand):not(.avatar){transition:color .18s ease,background-color .18s ease
 @media(prefers-reduced-motion:reduce){
  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
+
+
+/* Premium card surfaces across the entire TravelNet workspace */
+@keyframes tn-card-atmosphere{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+:root{
+ --tn-card-gradient:linear-gradient(125deg,#ffffff 0%,#f7f4ff 30%,#eef6ff 62%,#f4fbfa 100%);
+ --tn-card-gradient-soft:linear-gradient(135deg,#fff 0%,#f8f6ff 48%,#eff8ff 100%);
+}
+.panel,
+.home-metrics article,
+.purpose-chooser,
+.purpose-detail,
+.purpose-panel,
+.network-stat,
+.network-toolbar,
+.network-overview-card,
+.group-controls,
+.group-guidelines,
+.company-filters,
+.supplier-cta,
+.reference-card,
+.reference-metrics article,
+.story-card,
+.story-panel,
+.story-form,
+.story-preview-panel,
+.story-stat,
+.story-setting,
+.story-empty,
+.media-card,
+.media-stats article,
+.media-tabs,
+.media-empty-panel,
+.reference-list,
+.home-business-strip>div,
+.home-community-card,
+.home-post-card,
+.feed-post,
+.post-card,
+.discovery-panel,
+.topic-panel,
+.pending-panel{
+ background-color:#f8f8ff;
+ background-image:var(--tn-card-gradient)!important;
+ background-size:220% 220%!important;
+ animation:tn-card-atmosphere 18s ease-in-out infinite;
+ border-color:#e2e4f4!important;
+ box-shadow:0 7px 22px rgba(67,65,139,.055);
+}
+.home-metrics article:nth-child(2n),
+.reference-metrics article:nth-child(2n),
+.story-grid .story-card:nth-child(3n+2),
+.reference-card-grid .reference-card:nth-child(3n+2){
+ background-image:linear-gradient(135deg,#fff 0%,#eef7ff 42%,#f4f0ff 100%)!important;
+}
+.home-metrics article:nth-child(3n),
+.reference-metrics article:nth-child(3n),
+.story-grid .story-card:nth-child(3n),
+.reference-card-grid .reference-card:nth-child(3n){
+ background-image:linear-gradient(135deg,#fff 0%,#effaf7 40%,#f1f2ff 100%)!important;
+}
+/* Image-bearing cards keep their photographs; add a gentle colour wash to their copy areas. */
+.reference-card-copy,.story-card-body,.home-community-card .home-card-copy{
+ background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(246,245,255,.96),rgba(239,248,255,.97))!important;
+}
+.reference-card:hover,.home-community-card:hover,.home-post-card:hover,.story-card:hover,
+.network-overview-card:hover,.home-metrics article:hover,.reference-metrics article:hover{
+ transform:translateY(-4px);
+ border-color:#bdb2f1!important;
+ box-shadow:0 15px 32px rgba(76,64,159,.13)!important;
+}
+.story-card-media,.reference-card-media,.home-community-card .home-card-media{
+ overflow:hidden;
+}
+.story-card-media img,.reference-card-media img,.home-community-card .home-card-media img{
+ transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .4s ease;
+}
+.story-card:hover .story-card-media img,.reference-card:hover .reference-card-media img,
+.home-community-card:hover .home-card-media img{transform:scale(1.045);filter:saturate(1.08)}
+body.tn-dark .panel,body.tn-dark .home-metrics article,body.tn-dark .purpose-chooser,
+body.tn-dark .purpose-detail,body.tn-dark .network-stat,body.tn-dark .network-toolbar,
+body.tn-dark .network-overview-card,body.tn-dark .group-controls,body.tn-dark .group-guidelines,
+body.tn-dark .company-filters,body.tn-dark .supplier-cta,body.tn-dark .reference-card,
+body.tn-dark .reference-metrics article,body.tn-dark .story-card,body.tn-dark .story-panel,
+body.tn-dark .story-form,body.tn-dark .story-stat,body.tn-dark .story-setting,
+body.tn-dark .media-card,body.tn-dark .home-community-card{
+ background-image:linear-gradient(135deg,#252b46 0%,#2c2a50 48%,#20364d 100%)!important;
+ border-color:#3a4263!important;
+}
+body.tn-dark .reference-card-copy,body.tn-dark .story-card-body{
+ background:linear-gradient(145deg,#252b46,#2a2c4b,#20364d)!important;
+}
+@media(prefers-reduced-motion:reduce){
+ .panel,.home-metrics article,.purpose-chooser,.purpose-detail,.reference-card,.story-card,
+ .network-overview-card,.home-community-card{animation:none!important;background-position:50% 50%!important}
+}

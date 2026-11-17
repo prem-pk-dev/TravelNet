@@ -110,28 +110,8 @@ body.tn-dark .media-search,body.tn-dark .media-toolbar select,body.tn-dark .refe
 
 /* Use the MEDIA-ASSETS SVG icon set on static sidebar and top navigation markup */
 .side-link:not(:has(img))>span,.brand-tab:not(:has(img))>span{font-size:0!important;color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:17px 17px!important}
-.side-link[href="index.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/house.svg")!important}
-.side-link[href="reels.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/image.svg")!important}
-.side-link[href="watch.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/eye.svg")!important}
-.side-link[href="stories.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/camera.svg")!important}
-.side-link[href="network.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/users.svg")!important}
-.side-link[href="groups.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/users.svg")!important}
-.side-link[href="market.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/cart-shopping.svg")!important}
-.side-link[href="companies.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/folder.svg")!important}
-.side-link[href="learn.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/file.svg")!important}
-.side-link[href="work.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/file.svg")!important}
-.side-link[href="media.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/bookmark.svg")!important}
-.side-link[href="messages.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/envelope.svg")!important}
-.side-link[href="events.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/calendar-days.svg")!important}
-.side-link[href="jobs.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/file.svg")!important}
-.side-link[href="cyborg.html"]>span,.side-link[href="profile.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/gear.svg")!important}
 .side-link:not(:has(img))>span{filter:brightness(0) invert(1)!important}
 .brand-tab:not(:has(img))>span{filter:brightness(0) saturate(100%) invert(31%) sepia(32%) saturate(1780%) hue-rotate(220deg) brightness(88%) contrast(90%)!important}
-.brand-tab[href="index.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/house.svg")!important}
-.brand-tab[href="reels.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/image.svg")!important}
-.brand-tab[href="watch.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/eye.svg")!important}
-.brand-tab[href="stories.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/camera.svg")!important}
-.brand-tab[href="network.html"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/users.svg")!important}
 .media-collections{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:15px 0}
 .media-collection{position:relative;display:block;overflow:hidden;min-width:0;height:112px;padding:0;border:0;border-radius:12px;background:#e8eaf4;cursor:pointer;text-align:left}
 .media-collection img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
@@ -141,10 +121,6 @@ body.tn-dark .media-search,body.tn-dark .media-toolbar select,body.tn-dark .refe
 @media(max-width:620px){.media-collections{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.media-collection{height:92px}}
 
 /* Home-page sidebar action icons and launcher sizing */
-button.side-link[data-view="home"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/house.svg")!important}
-button.side-link[data-view="jobs"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/file.svg")!important}
-button.side-link[data-view="events"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/calendar-days.svg")!important}
-button.side-link[data-view="saved"]>span{background-image:url("https://media-assets-4sb.pages.dev/icons/ui/bookmark.svg")!important}
 button.side-link[data-view]>span{font-size:0!important;color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:17px 17px!important;filter:brightness(0) invert(1)!important}
 .tn-launcher{margin-top:12px}.tn-launcher .launcher-grid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:52px;font-size:9px}.tn-launcher .launcher-grid img{width:17px;height:17px;filter:brightness(0) invert(1)}
 
@@ -199,3 +175,9 @@ button.side-link[data-view]>span{font-size:0!important;color:transparent!importa
   overscroll-behavior:unset!important;scrollbar-width:none!important;
 }
 .workspace>.left-sidebar::-webkit-scrollbar,.workspace>.reference-sidebar::-webkit-scrollbar{display:none!important}
+
+/* All navigation icons are served by the local SVG sprite in assets/icons/ui-icons.svg */
+.side-link>span{background-image:none!important;filter:none!important}
+.side-link>span>.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:18px!important;height:18px!important;fill:currentColor!important;color:#fff!important;filter:none!important}
+.brand-tab>.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:16px!important;height:16px!important;fill:currentColor!important;color:currentColor!important;filter:none!important}
+.tn-launcher .launcher-grid .tn-sidebar-icon{display:block!important;visibility:visible!important;opacity:1!important;width:17px!important;height:17px!important;fill:currentColor!important;color:#fff!important;filter:none!important}

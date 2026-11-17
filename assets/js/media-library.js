@@ -1,21 +1,54 @@
 (()=>{"use strict";
-const root=document.querySelector("#mediaLibrary");if(!root)return;
+const root=document.querySelector("#mediaLibrary");
+if(!root)return;
 const DATA="assets/data/media-library.json";
-const state={items:[],category:"all",query:"",saved:new Set(JSON.parse(localStorage.getItem("travelnet:media-saved")||"[]")),tab:"explore",onlySaved:false};
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const title=s=>s.replace(/[-_]/g," ").replace(/\b\w/g,c=>c.toUpperCase());
-function render(){const filtered=state.items.filter(x=>(state.category==="all"||x.category===state.category)&&(!state.onlySaved||state.saved.has(x.src))&&(!state.query||[x.title,x.description,x.tags.join(" "),x.path].join(" ").toLowerCase().includes(state.query.toLowerCase())));const list=state.tab==="saved"?filtered.filter(x=>state.saved.has(x.src)):filtered;
-root.innerHTML=`<section class="media-hero"><div><span class="eyebrow">TRAVELNET MEDIA EXCHANGE</span><h1>Media &amp; Saved</h1><p>A knowledge library worth revisiting. Explore destination imagery, field inspiration and practical travel-industry visuals.</p><div class="media-hero-actions"><button class="media-primary" data-tab="explore">Explore original media</button><button class="media-ghost" data-tab="saved">Open saved hub</button></div></div><div class="media-hero-count"><strong>\${state.items.length}</strong><span>curated WebP assets</span></div></section>
-<div class="media-stats"><article><strong>\${state.items.length}</strong><span>MEDIA RECORDS</span></article><article><strong>\${state.saved.size}</strong><span>BOOKMARKS</span></article><article><strong>\${new Set(state.items.map(x=>x.category)).size}</strong><span>COLLECTIONS</span></article><article><strong>90</strong><span>MEDIA SOURCES</span></article></div>
-<nav class="media-tabs"><button class="\${state.tab==="explore"?"active":""}" data-tab="explore">Explore media</button><button class="\${state.tab==="saved"?"active":""}" data-tab="saved">Saved hub</button><button class="\${state.tab==="collections"?"active":""}" data-tab="collections">My collections</button><button class="\${state.tab==="insights"?"active":""}" data-tab="insights">Insights &amp; confidence</button></nav>
-\${state.tab==="collections"?'<section class="media-empty-panel"><h2>My collections</h2><p>Create a collection by saving the images you want to keep together. Your saved selections are stored in this browser.</p><button class="media-primary" data-tab="saved">View saved media</button></section>':state.tab==="insights"?'<section class="media-empty-panel"><h2>Media confidence</h2><p>All 90 assets are served from your MEDIA-ASSETS Cloudflare Pages library as WebP files. Preview each image before using it in a post or project.</p><div class="media-confidence"><span>Asset format</span><strong>WebP</strong><span>Source</span><strong>MEDIA-ASSETS</strong><span>Storage</span><strong>Public static URLs</strong></div></section>':`<div class="media-toolbar"><label class="media-search"><span>⌕</span><input id="mediaSearch" value="\${esc(state.query)}" placeholder="Search destinations, topics or media..."></label><select id="mediaCategory" aria-label="Filter by media category"><option value="all">All categories</option><option value="travel">Travel destinations</option><option value="nature">Nature &amp; landscapes</option><option value="general">General</option><option value="photography">Photography</option><option value="technology">Technology</option></select><label class="media-saved-toggle"><input id="onlySaved" type="checkbox" \${state.onlySaved?"checked":""}> Only my saved media</label></div><div class="media-result-line"><strong>\${list.length} results</strong><span>90 original WebP URLs · \${state.tab==="saved"?"Saved hub":"Explore media"}</span></div><div class="media-grid">\${list.map(x=>`<article class="media-card"><button class="media-image" data-preview="\${esc(x.src)}" aria-label="Preview \${esc(x.title)}"><img src="\${esc(x.src)}" alt="\${esc(x.alt)}" loading="lazy"></button><div class="media-card-copy"><span class="media-kicker">\${esc(title(x.category))} · \${esc(title(x.subcategory||"Collection"))}</span><h3>\${esc(x.title)}</h3><p>\${esc(x.description)}</p><div class="media-card-foot"><code>.webp</code><button data-save="\${esc(x.src)}">\${state.saved.has(x.src)?"♥ Saved":"♡ Save"}</button></div></div></article>`).join("")||'<div class="media-empty">No media matched this filter. Try another category or search term.</div>'}</div>`}
-<div class="media-disclaimer">TravelNet media library · Original images served from your MEDIA-ASSETS Cloudflare Pages deployment. Demo-only library interactions are saved locally in this browser.</div>`;
-root.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;render()});
-const q=root.querySelector("#mediaSearch");if(q)q.oninput=e=>{state.query=e.target.value;const pos=e.target.selectionStart;render();const n=root.querySelector("#mediaSearch");n.focus();n.setSelectionRange(pos,pos)};
-const cat=root.querySelector("#mediaCategory");if(cat)cat.onchange=e=>{state.category=e.target.value;render()};
-const saved=root.querySelector("#onlySaved");if(saved)saved.onchange=e=>{state.onlySaved=e.target.checked;render()};
-root.querySelectorAll("[data-save]").forEach(b=>b.onclick=()=>{const u=b.dataset.save;state.saved.has(u)?state.saved.delete(u):state.saved.add(u);localStorage.setItem("travelnet:media-saved",JSON.stringify([...state.saved]));render()});
-root.querySelectorAll("[data-preview]").forEach(b=>b.onclick=()=>{const u=b.dataset.preview;const item=state.items.find(x=>x.src===u);const modal=document.createElement("div");modal.className="media-lightbox";modal.innerHTML=`<button aria-label="Close preview">×</button><img src="\${esc(u)}" alt="\${esc(item?.alt||"Media preview")}"><div><strong>\${esc(item?.title||"Media preview")}</strong><span>\${esc(item?.path||"")}</span></div>`;modal.onclick=e=>{if(e.target===modal||e.target.tagName==="BUTTON")modal.remove()};document.body.append(modal)});
+const savedKey="travelnet:media-saved";
+let items=[];
+let category="all";
+let query="";
+let tab="explore";
+let onlySaved=false;
+let saved=[];
+try{saved=JSON.parse(localStorage.getItem(savedKey)||"[]")}catch(savedError){saved=[]}
+const esc=function(value){return String(value==null?"":value).replace(/[&<>"']/g,function(char){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]})};
+const pretty=function(value){return String(value||"").replace(/[-_]/g," ").replace(/\b\w/g,function(char){return char.toUpperCase()})};
+const isSaved=function(src){return saved.indexOf(src)!==-1};
+const save=function(src){if(isSaved(src))saved=saved.filter(function(x){return x!==src});else saved.push(src);try{localStorage.setItem(savedKey,JSON.stringify(saved))}catch(storageError){}};
+function card(item){
+ return '<article class="media-card"><button class="media-image" type="button" data-preview="'+esc(item.src)+'" aria-label="Preview '+esc(item.title)+'"><img src="'+esc(item.src)+'" alt="'+esc(item.alt)+'" loading="lazy"></button><div class="media-card-copy"><span class="media-kicker">'+esc(pretty(item.category))+' · '+esc(pretty(item.subcategory||"Collection"))+'</span><h3>'+esc(item.title)+'</h3><p>'+esc(item.description)+'</p><div class="media-card-foot"><code>.webp</code><button type="button" data-save="'+esc(item.src)+'">'+(isSaved(item.src)?"♥ Saved":"♡ Save")+'</button></div></div></article>';
 }
-fetch(DATA).then(r=>{if(!r.ok)throw Error("Could not load media manifest");return r.json()}).then(items=>{state.items=items;render()}).catch(()=>{root.innerHTML='<div class="media-empty">The media library could not be loaded. Please refresh the page.</div>'});
+function render(){
+ const filtered=items.filter(function(item){
+  const matchesCategory=category==="all"||item.category===category;
+  const matchesSaved=!onlySaved||isSaved(item.src);
+  const haystack=[item.title,item.description,(item.tags||[]).join(" "),item.path].join(" ").toLowerCase();
+  const matchesQuery=!query||haystack.indexOf(query.toLowerCase())!==-1;
+  return matchesCategory&&matchesSaved&&matchesQuery;
+ });
+ const list=tab==="saved"?filtered.filter(function(item){return isSaved(item.src)}):filtered;
+ const categories=["all","travel","nature","general","photography","technology"];
+ let categoryOptions=categories.map(function(value){const label=value==="all"?"All categories":value==="travel"?"Travel destinations":pretty(value);return '<option value="'+value+'" '+(category===value?"selected":"")+'>'+label+'</option>'}).join("");
+ let body="";
+ if(tab==="collections"){
+  body='<section class="media-empty-panel"><h2>My collections</h2><p>Create a collection by saving images you want to keep together. Your saved selections are stored in this browser.</p><p><strong>'+saved.length+'</strong> saved media assets</p><button class="media-primary" type="button" data-tab="saved">View saved media</button></section>';
+ }else if(tab==="insights"){
+  body='<section class="media-empty-panel"><h2>Media confidence</h2><p>All 90 assets are served from your MEDIA-ASSETS Cloudflare Pages library as WebP files. Preview each image before using it in a post or project.</p><div class="media-confidence"><span>Asset format</span><strong>WebP</strong><span>Source</span><strong>MEDIA-ASSETS</strong><span>Storage</span><strong>Public static URLs</strong><span>Saved in this browser</span><strong>'+saved.length+'</strong></div></section>';
+ }else{
+  body='<div class="media-toolbar"><label class="media-search"><span>⌕</span><input id="mediaSearch" value="'+esc(query)+'" placeholder="Search destinations, topics or media..."></label><select id="mediaCategory" aria-label="Filter by media category">'+categoryOptions+'</select><label class="media-saved-toggle"><input id="onlySaved" type="checkbox" '+(onlySaved?"checked":"")+'> Only my saved media</label></div><div class="media-result-line"><strong>'+list.length+' results</strong><span>90 original WebP URLs · '+(tab==="saved"?"Saved hub":"Explore media")+'</span></div><div class="media-grid">'+(list.map(card).join("")||'<div class="media-empty">No media matched this filter. Try another category or search term.</div>')+'</div>';
+ }
+ root.innerHTML='<section class="media-hero"><div><span class="eyebrow">TRAVELNET MEDIA EXCHANGE</span><h1>Media &amp; Saved</h1><p>A knowledge library worth revisiting. Explore destination imagery, field inspiration and practical travel-industry visuals.</p><div class="media-hero-actions"><button class="media-primary" type="button" data-tab="explore">Explore original media</button><button class="media-ghost" type="button" data-tab="saved">Open saved hub</button></div></div><div class="media-hero-count"><strong>'+items.length+'</strong><span>curated WebP assets</span></div></section>'+
+ '<div class="media-stats"><article><strong>'+items.length+'</strong><span>MEDIA RECORDS</span></article><article><strong>'+saved.length+'</strong><span>BOOKMARKS</span></article><article><strong>'+new Set(items.map(function(x){return x.category})).size+'</strong><span>COLLECTIONS</span></article><article><strong>90</strong><span>MEDIA SOURCES</span></article></div>'+
+ '<nav class="media-tabs"><button type="button" class="'+(tab==="explore"?"active":"")+'" data-tab="explore">Explore media</button><button type="button" class="'+(tab==="saved"?"active":"")+'" data-tab="saved">Saved hub</button><button type="button" class="'+(tab==="collections"?"active":"")+'" data-tab="collections">My collections</button><button type="button" class="'+(tab==="insights"?"active":"")+'" data-tab="insights">Insights &amp; confidence</button></nav>'+body+
+ '<div class="media-disclaimer">TravelNet media library · Original images served from your MEDIA-ASSETS Cloudflare Pages deployment. Demo-only library interactions are saved locally in this browser.</div>';
+ root.querySelectorAll("[data-tab]").forEach(function(button){button.addEventListener("click",function(){tab=button.dataset.tab;render()})});
+ const search=root.querySelector("#mediaSearch");
+ if(search)search.addEventListener("input",function(event){query=event.target.value;const cursor=event.target.selectionStart;render();const next=root.querySelector("#mediaSearch");if(next){next.focus();next.setSelectionRange(cursor,cursor)}});
+ const filter=root.querySelector("#mediaCategory");
+ if(filter)filter.addEventListener("change",function(event){category=event.target.value;render()});
+ const savedOnly=root.querySelector("#onlySaved");
+ if(savedOnly)savedOnly.addEventListener("change",function(event){onlySaved=event.target.checked;render()});
+ root.querySelectorAll("[data-save]").forEach(function(button){button.addEventListener("click",function(){save(button.dataset.save);render()})});
+ root.querySelectorAll("[data-preview]").forEach(function(button){button.addEventListener("click",function(){const item=items.find(function(x){return x.src===button.dataset.preview});const overlay=document.createElement("div");overlay.className="media-lightbox";const close=document.createElement("button");close.type="button";close.setAttribute("aria-label","Close preview");close.textContent="×";const image=document.createElement("img");image.src=item.src;image.alt=item.alt||item.title;const details=document.createElement("div");const name=document.createElement("strong");name.textContent=item.title;const path=document.createElement("span");path.textContent=item.path;details.append(name,path);overlay.append(close,image,details);overlay.addEventListener("click",function(event){if(event.target===overlay||event.target===close)overlay.remove()});document.body.append(overlay)})});
+}
+fetch(DATA,{cache:"no-cache"}).then(function(response){if(!response.ok)throw new Error("Media manifest returned "+response.status);return response.json()}).then(function(data){if(!Array.isArray(data))throw new Error("Media manifest is not an array");items=data;render()}).catch(function(error){root.innerHTML='<div class="media-empty">The media library could not be loaded. '+esc(error.message)+' <button type="button" onclick="location.reload()">Retry</button></div>'});
 })();

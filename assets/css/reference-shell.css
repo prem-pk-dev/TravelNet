@@ -541,17 +541,24 @@ body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!i
 }
 
 
-/* Final overlap fix: extend the sticky profile panel into the sidebar's top padding */
+
+/* Hide content passing behind the sidebar's top edge while scrolling; preserve layout and profile position */
+.workspace>.left-sidebar::before,
+.workspace>.reference-sidebar::before{
+  content:""!important;
+  position:sticky!important;
+  top:0!important;
+  display:block!important;
+  height:14px!important;
+  margin-bottom:-14px!important;
+  z-index:90!important;
+  pointer-events:none!important;
+  background:linear-gradient(160deg,#102A43 0%,#164b66 58%,#176B87 100%)!important;
+}
 .workspace>.left-sidebar .profile-mini.panel,
 .workspace>.reference-sidebar .profile-mini.panel{
-  position:sticky!important;
-  top:-14px!important;
+  top:0!important;
+  margin-top:0!important;
+  padding-top:0!important;
   z-index:100!important;
-  margin-top:-14px!important;
-  padding-top:14px!important;
-  background:#193f59!important;
-  background-image:linear-gradient(155deg,#17344f 0%,#214b65 100%)!important;
-  opacity:1!important;
-  -webkit-backdrop-filter:none!important;
-  backdrop-filter:none!important;
 }

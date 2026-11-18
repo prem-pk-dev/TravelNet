@@ -524,13 +524,13 @@ body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!i
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 
-/* Homepage sidebar: the profile stays in the fixed shell while only navigation content scrolls. */
+/* Homepage sidebar: keep the profile in a fixed grid row and make navigation the only scroll container. */
 .workspace>.left-sidebar{
   position:sticky!important;
   top:88px!important;
   align-self:start!important;
-  display:flex!important;
-  flex-direction:column!important;
+  display:grid!important;
+  grid-template-rows:max-content minmax(0,1fr)!important;
   height:calc(100vh - 106px)!important;
   max-height:calc(100vh - 106px)!important;
   min-height:0!important;
@@ -538,20 +538,24 @@ body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!i
 }
 .workspace>.left-sidebar>.profile-mini{
   position:static!important;
-  flex:0 0 auto!important;
+  min-height:0!important;
   z-index:auto!important;
   margin-bottom:8px!important;
   backdrop-filter:none!important;
 }
 .workspace>.left-sidebar>.sidebar-navigation{
-  flex:1 1 auto!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-height:100%!important;
   min-height:0!important;
   overflow-x:hidden!important;
   overflow-y:auto!important;
-  overscroll-behavior:contain!important;
+  overscroll-behavior-y:contain!important;
+  -webkit-overflow-scrolling:touch!important;
   scrollbar-width:thin!important;
   scrollbar-color:rgba(255,255,255,.28) transparent!important;
-  padding-right:3px!important;
+  padding:0 3px 8px 0!important;
 }
-.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar{width:5px}
-.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar-thumb{background:rgba(255,255,255,.28);border-radius:10px}
+.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar{width:6px}
+.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar-thumb{background:rgba(255,255,255,.38);border-radius:10px}

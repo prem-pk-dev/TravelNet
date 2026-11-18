@@ -125,8 +125,8 @@ button.side-link[data-view]>span{font-size:0!important;color:transparent!importa
 .tn-launcher{margin-top:12px}.tn-launcher .launcher-grid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:52px;font-size:9px}.tn-launcher .launcher-grid img{width:17px;height:17px;filter:brightness(0) invert(1)}
 
 
-/* Reference-page sidebar follows the document scroll. */
-.workspace>.reference-sidebar{
+/* Sidebar correction: keep the navigation pinned during document scrolling without a nested scroll area. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
   position:sticky!important;top:88px!important;align-self:start!important;
   height:max-content!important;max-height:none!important;
   overflow:visible!important;overscroll-behavior:unset!important;
@@ -167,14 +167,14 @@ button.side-link[data-view]>span{font-size:0!important;color:transparent!importa
 .left-sidebar .side-link>span .tn-sidebar-icon{width:17px!important;height:17px!important}
 .brand-tab .tn-sidebar-icon{width:16px!important;height:16px!important;color:currentColor!important}
 .tn-launcher .launcher-grid .tn-sidebar-icon{width:17px!important;height:17px!important;color:#fff!important}
-/* Reference-page sidebar follows the document scroll. */
-.workspace>.reference-sidebar{
+/* The sidebar follows the page scroll and never becomes its own scroll container. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
   position:sticky!important;top:88px!important;align-self:start!important;
   height:max-content!important;max-height:none!important;min-height:0!important;
   overflow:visible!important;overflow-y:visible!important;overflow-x:visible!important;
   overscroll-behavior:unset!important;scrollbar-width:none!important;
 }
-.workspace>.reference-sidebar::-webkit-scrollbar{display:none!important}
+.workspace>.left-sidebar::-webkit-scrollbar,.workspace>.reference-sidebar::-webkit-scrollbar{display:none!important}
 
 /* All navigation icons are served by the local SVG sprite in assets/icons/ui-icons.svg */
 .side-link>span{background-image:none!important;filter:none!important}
@@ -192,7 +192,7 @@ img.tn-sidebar-icon{display:block!important;visibility:visible!important;opacity
 /* Keep sticky sidebar attached to the viewport scroll, not an overflow ancestor */
 html,body{overflow-x:clip!important}
 .app-shell,.workspace{overflow:visible!important}
-.workspace>.reference-sidebar{position:sticky!important;top:88px!important;align-self:start!important;overflow:visible!important;max-height:none!important}
+.workspace>.left-sidebar,.workspace>.reference-sidebar{position:sticky!important;top:88px!important;align-self:start!important;overflow:visible!important;max-height:none!important}
 
 
 /* Topbar: use the modern local SVG icon files */
@@ -200,20 +200,20 @@ html,body{overflow-x:clip!important}
 .top-actions .icon-button{display:inline-flex;align-items:center;justify-content:center;position:relative}
 .top-actions .notification-dot{right:5px;top:5px}
 
-/* Reference-page sidebar and profile card scrolling. */
-.workspace>.reference-sidebar{
+/* The profile card stays pinned while the sidebar navigation scrolls underneath it. */
+.workspace>.left-sidebar,.workspace>.reference-sidebar{
   position:sticky!important;top:88px!important;align-self:start!important;
   height:calc(100vh - 100px)!important;max-height:calc(100vh - 100px)!important;
   overflow-x:hidden!important;overflow-y:auto!important;
   overscroll-behavior:contain!important;scrollbar-width:thin!important;
   scrollbar-color:rgba(91,66,184,.28) transparent!important;
 }
-.workspace>.reference-sidebar .profile-mini{
+.workspace>.left-sidebar .profile-mini,.workspace>.reference-sidebar .profile-mini{
   position:sticky!important;top:0!important;z-index:8!important;
   margin-bottom:8px!important;box-shadow:0 8px 18px rgba(34,28,84,.12)!important;
 }
-.workspace>.reference-sidebar::-webkit-scrollbar{width:5px}
-.workspace>.reference-sidebar::-webkit-scrollbar-thumb{background:rgba(91,66,184,.25);border-radius:10px}
+.workspace>.left-sidebar::-webkit-scrollbar,.workspace>.reference-sidebar::-webkit-scrollbar{width:5px}
+.workspace>.left-sidebar::-webkit-scrollbar-thumb,.workspace>.reference-sidebar::-webkit-scrollbar-thumb{background:rgba(91,66,184,.25);border-radius:10px}
 
 /* Richer TravelNet category cards: destination photography fades into a clean readable card body. */
 .home-community-card{
@@ -442,7 +442,7 @@ body.tn-dark .reference-card-copy,body.tn-dark .story-card-body{
 }
 @media(max-width:700px){.home-community-grid .home-community-card{min-height:230px!important}}
 
-
+.left-sidebar .profile-mini.panel{position:sticky!important;top:0!important;z-index:6!important;backdrop-filter:blur(12px)}
 .tn-mobile-nav{display:none}
 @media(max-width:900px){.tn-mobile-nav{display:flex!important;position:fixed!important;left:0!important;right:0!important;bottom:0!important;z-index:60!important;min-height:62px!important;padding:6px 5px calc(6px + env(safe-area-inset-bottom))!important;gap:2px!important;align-items:center!important;justify-content:space-around!important;background:rgba(255,255,255,.97)!important;border-top:1px solid var(--tn-line,#e7e9f2)!important;box-shadow:0 -5px 24px rgba(35,43,85,.12)!important;backdrop-filter:blur(14px)!important}.tn-mobile-nav a{flex:1!important;min-width:0!important;min-height:46px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;border-radius:9px!important;color:#737b91!important;text-decoration:none!important;font-size:9px!important;font-weight:700!important}.tn-mobile-nav a span{font-size:18px!important;line-height:1!important}.tn-mobile-nav a.selected,.tn-mobile-nav a:hover{color:#5542b4!important;background:#f0edff!important}body:has(.tn-mobile-nav){padding-bottom:calc(70px + env(safe-area-inset-bottom))!important}}
 
@@ -522,40 +522,3 @@ body.tn-dark .reference-tabs button.active{background:#1b4054!important;color:#7
 body.tn-dark .reference-callout,body.tn-dark .home-industry-note{background:#17364a!important}
 body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!important;color:#d7edf1!important}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-
-
-/* Homepage sidebar: keep the profile in a fixed grid row and make navigation the only scroll container. */
-.workspace>.left-sidebar{
-  position:sticky!important;
-  top:88px!important;
-  align-self:start!important;
-  display:grid!important;
-  grid-template-rows:max-content minmax(0,1fr)!important;
-  height:calc(100vh - 106px)!important;
-  max-height:calc(100vh - 106px)!important;
-  min-height:0!important;
-  overflow:visible!important;
-}
-.workspace>.left-sidebar>.profile-mini{
-  position:static!important;
-  min-height:0!important;
-  z-index:auto!important;
-  margin-bottom:8px!important;
-  backdrop-filter:none!important;
-}
-.workspace>.left-sidebar>.sidebar-navigation{
-  display:block!important;
-  width:100%!important;
-  height:100%!important;
-  max-height:100%!important;
-  min-height:0!important;
-  overflow-x:hidden!important;
-  overflow-y:auto!important;
-  overscroll-behavior-y:contain!important;
-  -webkit-overflow-scrolling:touch!important;
-  scrollbar-width:thin!important;
-  scrollbar-color:rgba(255,255,255,.28) transparent!important;
-  padding:0 3px 8px 0!important;
-}
-.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar{width:6px}
-.workspace>.left-sidebar>.sidebar-navigation::-webkit-scrollbar-thumb{background:rgba(255,255,255,.38);border-radius:10px}

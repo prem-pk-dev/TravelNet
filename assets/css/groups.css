@@ -56,3 +56,11 @@
 .group-detail-aside #deleteCommunity{color:#9b4f4f;border-color:#ead5d5;background:#fff8f8}
 .discussion-card-top strong{line-height:1.5}
 .discussion-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+
+
+/* Hospitality community detail banner photo from MEDIA-ASSETS PublicUrl.md */
+.group-detail-hero{
+  background-image:linear-gradient(90deg,rgba(16,42,67,.58),rgba(16,42,67,.12)),var(--group-image,linear-gradient(115deg,var(--group-a),var(--group-b)));
+  background-size:cover;
+  background-position:center 48%;
+}

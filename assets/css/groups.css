@@ -30,3 +30,12 @@
 .group-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .group-modal-actions{display:flex;justify-content:flex-end;gap:8px}
 @media(max-width:700px){.group-directory-toolbar{align-items:stretch;flex-direction:column}.group-view-tabs{overflow:auto}.group-view-tabs button{flex:1}.group-directory-toolbar>.button{justify-content:center}.group-form-row{grid-template-columns:1fr}.group-create-modal{padding:17px}}
+
+.discussion-actions{display:flex;align-items:center;gap:14px;margin-top:10px;padding-top:8px;border-top:1px solid #edf1ed;color:#829087;font-size:9px}
+.discussion-actions button{border:0;background:transparent;color:#426c55;font-size:10px;font-weight:700;padding:4px 0}
+.discussion-actions button:hover{color:#1f4d38}
+.discussion-comments{display:grid;gap:5px}
+.discussion-comments p{margin:7px 0 0;padding:7px 9px;background:#f3f6f3;border-radius:8px;font-size:10px}
+.discussion-comment-form{display:flex;gap:7px;margin-top:9px}
+.discussion-comment-form input{min-width:0;flex:1;border:1px solid #e2e9e3;border-radius:18px;padding:8px 11px;font-size:10px}
+.discussion-comment-form button{border:0;border-radius:18px;background:#eaf2ec;color:#2e654b;padding:0 12px;font-size:9px;font-weight:700}

@@ -1,4 +1,4 @@
-(()=>{"use strict";
+(()=>{"use strict";const oceanTheme=document.createElement("link");oceanTheme.rel="stylesheet";oceanTheme.href="assets/css/ocean-theme.css";document.head.append(oceanTheme);
 const iconBase="assets/icons/ui/";
 const items=[["Home","index.html","house"],["Reels & Media","reels.html","image"],["Watch","watch.html","eye"],["Stories","stories.html","camera"],["People","network.html","users"],["Groups","groups.html","users"],["Marketplace","market.html","cart-shopping"],["Companies & Pages","companies.html","folder"],["Learn & Courses","learn.html","file"],["Work","work.html","file"],["Media & Saved","media.html","bookmark"],["Messages","messages.html","envelope"],["Events","events.html","calendar-days"],["Jobs","jobs.html","file"],["Assistant tools","assistant.html","gear"],["Profile & Settings","profile.html","user"]];
 const icon=n=>'<img class="tn-sidebar-icon" src="'+iconBase+n+'.svg" alt="" aria-hidden="true">';

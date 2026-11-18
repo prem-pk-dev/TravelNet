@@ -39,3 +39,15 @@
 .discussion-comment-form{display:flex;gap:7px;margin-top:9px}
 .discussion-comment-form input{min-width:0;flex:1;border:1px solid #e2e9e3;border-radius:18px;padding:8px 11px;font-size:10px}
 .discussion-comment-form button{border:0;border-radius:18px;background:#eaf2ec;color:#2e654b;padding:0 12px;font-size:9px;font-weight:700}
+
+.discussion-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0}
+.discussion-toolbar label{display:flex;align-items:center;gap:8px;color:#718078;font-size:10px}
+.discussion-toolbar select,.discussion-toolbar input{min-width:0;border:1px solid #e1e8e1;border-radius:8px;background:#fff;color:#4c6154;padding:8px 10px;font:10px "DM Sans",sans-serif}
+.discussion-toolbar input{width:min(220px,48%)}
+.discussion-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.discussion-delete{border:0;background:#f8eeee;color:#a24c4c;border-radius:6px;padding:5px 8px;font-size:9px}
+.discussion-card[hidden]{display:none}
+.discussion-card[data-pinned="true"]{background:#fbfcf8;border-left:3px solid #b8a36f;padding:12px;border-radius:8px}
+.discussion-actions button[data-pin-post]{color:#88764e}
+.group-detail-aside .button+.button{margin-top:8px}
+@media(max-width:600px){.discussion-toolbar{align-items:stretch;flex-direction:column}.discussion-toolbar input{width:100%}.discussion-toolbar label{justify-content:space-between}}

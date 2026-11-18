@@ -72,3 +72,24 @@ body.tn-dark .reference-tabs button.active{background:#1b4054!important;color:#7
 body.tn-dark .reference-callout,body.tn-dark .home-industry-note{background:#17364a!important}
 body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!important;color:#d7edf1!important}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Dark-mode contrast: shared homepage header and search controls */
+body.tn-dark .topbar{color:#e7f1f5!important}
+body.tn-dark .topbar .brand,
+body.tn-dark .topbar .brand-light,
+body.tn-dark .topbar .brand small{color:#e7f1f5!important}
+body.tn-dark .topbar .brand-tabs .brand-tab{color:#b4c9d5!important}
+body.tn-dark .topbar .brand-tabs .brand-tab:hover,
+body.tn-dark .topbar .brand-tabs .brand-tab.active{background:#1b4054!important;color:#7ce0d9!important}
+body.tn-dark .topbar .global-search{background:#17364a!important;border-color:#35566b!important;color:#c3d5df!important}
+body.tn-dark .topbar .global-search svg{stroke:#b4c9d5!important}
+body.tn-dark .topbar .global-search input{background:transparent!important;color:#f0f6f8!important;-webkit-text-fill-color:#f0f6f8!important;caret-color:#7ce0d9!important}
+body.tn-dark .topbar .global-search input::placeholder{color:#a9c0ce!important;opacity:1}
+body.tn-dark .topbar .global-search kbd{background:#102638!important;border-color:#35566b!important;color:#b4c9d5!important}
+body.tn-dark .topbar .top-actions .icon-button{background:transparent!important;color:#e7f1f5!important}
+body.tn-dark .topbar .top-actions .icon-button:hover{background:#1b4054!important;color:#7ce0d9!important}
+body.tn-dark .topbar .top-actions .theme-header-toggle{background:#e7f1f5!important;color:#102638!important;border-color:#e7f1f5!important}
+body.tn-dark .topbar .top-actions .theme-header-toggle:hover{background:#cce7eb!important;color:#102638!important}
+body.tn-dark .topbar .auth-nav-link{color:#d7edf1!important;border-color:#527184!important;background:#17364a!important}
+body.tn-dark .topbar .avatar{background:#d8edf0!important;color:#17364a!important}
+body.tn-dark .topbar .icon-button svg{stroke:currentColor!important}

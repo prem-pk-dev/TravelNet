@@ -12,3 +12,21 @@
 .group-search:focus-within{outline:none;border-color:var(--line);box-shadow:none}
 .group-search input:focus,.group-search input:focus-visible{outline:none!important;box-shadow:none!important;border:0!important}
 @media(max-width:700px){.group-card{height:330px;min-height:330px}.group-card-cover{height:132px;min-height:132px}}
+
+/* LinkedIn/Facebook-inspired community discovery controls */
+.group-directory-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
+.group-view-tabs{display:flex;gap:5px;padding:4px;background:#e9efea;border-radius:10px}
+.group-view-tabs button{border:0;background:transparent;color:#65766b;padding:9px 13px;border-radius:7px;font-size:10px;font-weight:700;white-space:nowrap}
+.group-view-tabs button.active{background:#fff;color:#245b45;box-shadow:0 1px 4px #1b392510}
+.group-directory-toolbar>.button{white-space:nowrap}
+.group-modal-backdrop{position:fixed;inset:0;z-index:80;background:#12251f88;display:grid;place-items:center;padding:18px}
+.group-create-modal{width:min(560px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:16px;padding:22px;box-shadow:0 22px 70px #10251f40;display:grid;gap:13px}
+.group-modal-head{display:flex;align-items:flex-start;justify-content:space-between}
+.group-modal-head h2{font:700 19px Manrope;margin:5px 0 0}
+.group-modal-close{border:0;background:#edf2ee;border-radius:50%;width:32px;height:32px;font-size:20px;color:#53645a}
+.group-create-modal label{display:grid;gap:6px;font-size:10px;font-weight:700;color:#53645a}
+.group-create-modal input,.group-create-modal textarea,.group-create-modal select{width:100%;border:1px solid #dfe7e0;border-radius:8px;padding:11px;background:#fff;color:#263a30;font:12px "DM Sans",sans-serif;min-width:0}
+.group-create-modal textarea{min-height:100px;resize:vertical}
+.group-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.group-modal-actions{display:flex;justify-content:flex-end;gap:8px}
+@media(max-width:700px){.group-directory-toolbar{align-items:stretch;flex-direction:column}.group-view-tabs{overflow:auto}.group-view-tabs button{flex:1}.group-directory-toolbar>.button{justify-content:center}.group-form-row{grid-template-columns:1fr}.group-create-modal{padding:17px}}

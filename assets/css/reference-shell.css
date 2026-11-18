@@ -562,3 +562,13 @@ body.tn-dark .button-secondary,body.tn-dark .button-outline{background:#17364a!i
   padding-top:0!important;
   z-index:100!important;
 }
+
+/* Sidebar profile card: restore the approved MEDIA-ASSETS photo after shell overrides */
+.workspace>.left-sidebar .profile-cover,
+.workspace>.reference-sidebar .profile-cover{
+  background-color:#214b65!important;
+  background-image:linear-gradient(180deg,rgba(16,42,67,.08),rgba(16,42,67,.42)),url("https://media-assets-4sb.pages.dev/thumbnails/business-team.webp")!important;
+  background-position:center 42%!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+}

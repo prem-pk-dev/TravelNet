@@ -1,0 +1,21 @@
+/* TravelNet professional profile enhancements */
+.profile-meta{flex-wrap:wrap;row-gap:9px}
+.profile-meta span{display:inline-flex;align-items:center;gap:5px}
+.profile-meta #profileCompany{font-weight:700;color:#426b54}
+.profile-meta #profileWebsite{overflow-wrap:anywhere}
+.profile-main-col .content-panel,.profile-side-col .content-panel{min-width:0}
+.profile-main-col .tag-list,.profile-side-col .tag-list{margin:13px 0 4px}
+.profile-main-col .tag-list span,.profile-side-col .tag-list span{border:1px solid #e3ece5;background:#f1f6f1;color:#476653}
+.profile-preview-modal .modal-body{padding:16px 20px}
+.profile-preview-card{padding:20px;border:1px solid #e4ebe5;border-radius:12px;background:linear-gradient(145deg,#fbfdfb,#f1f6f2)}
+.profile-preview-card h3{font:800 20px Manrope;color:#294d3b;margin:0 0 6px}
+.profile-preview-card p{font-size:11px;line-height:1.7;color:#627369;margin:7px 0 13px;overflow-wrap:anywhere}
+.profile-preview-card strong{font:700 11px Manrope;color:#365b45}
+.profile-preview-card small{display:block;border-top:1px solid #e0e9e2;padding-top:12px;margin-top:15px;color:#89968d;font-size:9px}
+.profile-editor .form-field input,.profile-editor .form-field textarea{width:100%;box-sizing:border-box}
+.profile-editor .form-field input:focus,.profile-editor .form-field textarea:focus{outline:2px solid #b9d3c1;outline-offset:1px}
+body.tn-dark .profile-preview-card{background:#142b3d;border-color:#35566b}
+body.tn-dark .profile-preview-card h3,body.tn-dark .profile-preview-card strong{color:#e4f3e9}
+body.tn-dark .profile-preview-card p,body.tn-dark .profile-preview-card small{color:#bfd0c6}
+body.tn-dark .profile-meta #profileCompany{color:#a9d6b5}
+@media(max-width:620px){.profile-meta{display:grid;gap:8px}.profile-preview-modal .modal-body{padding:12px}.profile-preview-card{padding:15px}}

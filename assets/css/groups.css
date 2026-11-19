@@ -64,3 +64,18 @@
   background-size:cover;
   background-position:center 48%;
 }
+
+/* Community detail: events, resources, member directory and join questions */
+.community-event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.community-info-card{border:1px solid #e5ebe5;border-radius:10px;padding:13px;display:grid;gap:8px;background:#fbfcfa}
+.community-card-kicker{font-size:8px;letter-spacing:.08em;color:#8b987f;font-weight:700}
+.community-info-card strong,.community-resource strong,.community-member strong{font-size:11px;color:#31483a}
+.community-info-card p{margin:0;color:#7b897f;font-size:9px}
+.community-action{justify-self:start;border:1px solid #dce8de;border-radius:18px;background:#edf4ee;color:#2f694c;padding:6px 12px;font-size:9px;font-weight:700;cursor:pointer}
+.community-resource-list,.community-member-list{display:grid;gap:8px}
+.community-resource,.community-member{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #e8eee8;border-radius:9px;background:#fff}
+.community-resource>div,.community-member>div{display:grid;gap:3px;flex:1;min-width:0}
+.community-resource small,.community-member small{font-size:9px;color:#829087}
+.resource-icon,.member-avatar{width:34px;height:34px;display:grid;place-items:center;border-radius:9px;background:#edf3ed;color:#37664d;font-size:14px;font-weight:700;flex:0 0 auto}
+.member-role{font-size:8px;color:#728276;background:#f0f4ef;border-radius:12px;padding:5px 7px;white-space:nowrap}
+@media(max-width:600px){.community-event-grid{grid-template-columns:1fr}.community-member{align-items:flex-start;flex-wrap:wrap}.member-role{margin-left:44px}}

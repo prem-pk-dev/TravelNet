@@ -1,6 +1,6 @@
 (()=>{"use strict";
 const $=s=>document.querySelector(s),KEY="travelnet:messaging";
-const read=(k,fallback)=>{try{return JSON.parse(localStorage.getItem(KEY+":"+k))??fallback}catch{return fallback}};
+const read=(k,fallback)=>{try{return JSON.parse(localStorage.getItem(KEY+":"+k))??fallback}catch{return fallback}};const readList=(k,fallback=[])=>{const value=read(k,fallback);return Array.isArray(value)?value.filter(x=>x&&typeof x==="object"&&!Array.isArray(x)):fallback};
 const write=(k,value)=>{try{localStorage.setItem(KEY+":"+k,JSON.stringify(value));return true}catch{toast("Browser storage is unavailable.");return false}};
 const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const stamp=()=>new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});
@@ -11,8 +11,8 @@ const contacts=[
 {id:"samira",name:"Samira Rahman",role:"Hotel partnerships · Dubai",initials:"SR",preview:"Are you attending the regional travel meet-up?",time:"Mon",unread:false,messages:[["them","Are you attending the regional travel meet-up?","Mon"]]},
 {id:"alex",name:"Alex Morgan",role:"Destination specialist · Lisbon",initials:"AM",preview:"Happy to compare destination research notes.",time:"Tue",unread:false,messages:[["them","Happy to compare destination research notes.","Tue"]]}
 ];
-let chats=read("chats",contacts).map(c=>({...c,messages:Array.isArray(c.messages)?c.messages:[],preview:c.preview||"",time:c.time||"",unread:!!c.unread}));
-let notices=read("notices",[
+let chats=readList("chats",contacts).map(c=>({...c,messages:Array.isArray(c.messages)?c.messages:[],preview:c.preview||"",time:c.time||"",unread:!!c.unread}));
+let notices=readList("notices",[
 {id:"n1",icon:"♧",text:"Maya Chen sent you a connection message.",time:"Today · 10:42",unread:true},
 {id:"n2",icon:"◎",text:"A new discussion was added to Responsible Tourism Exchange.",time:"Yesterday",unread:true},
 {id:"n3",icon:"▦",text:"A company profile you viewed has updated its service summary.",time:"2 days ago",unread:false},

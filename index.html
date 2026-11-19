@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="assets/css/home-discovery.css">
 <link rel="stylesheet" href="assets/css/global-search.css">
 <link rel="stylesheet" href="assets/css/stories.css">
+<link rel="stylesheet" href="assets/css/feed-upgrade.css">
 </head>
 <body>
 <div class="app-shell">
@@ -23,8 +24,8 @@
       <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 20h30M20 3c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m11 10 18 20M29 10 11 30" stroke="currentColor" stroke-width="1.1" opacity=".75"/></svg></span>
       <span>travel<span class="brand-light">net</span><small>THE TRAVEL INDUSTRY NETWORK</small></span>
     </a>
-    <div class="global-search-wrap"><label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="globalSearch" type="search" aria-controls="globalSearchResults" aria-expanded="false" placeholder="Search people, companies, groups..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label><div id="globalSearchResults" class="global-search-results" role="listbox" aria-label="Search suggestions" hidden></div></div>
-    <nav class="brand-tabs" aria-label="TravelNet sections"><a class="brand-tab active" href="index.html"><span>⌂</span>Home</a><a class="brand-tab" href="reels.html"><span>▣</span>Reels</a><a class="brand-tab" href="watch.html"><span>▷</span>Watch</a><a class="brand-tab" href="stories.html"><span>◉</span>Stories</a><a class="brand-tab" href="network.html"><span>♧</span>People</a></nav>
+    <div class="global-search-wrap"><label class="global-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><select id="globalSearchType" aria-label="Search category"><option value="all">All</option><option value="Professional">People</option><option value="Company">Agencies</option><option value="Community">Groups</option><option value="B2B Lead">B2B Leads</option></select><input id="globalSearch" type="search" aria-controls="globalSearchResults" aria-expanded="false" placeholder="Search people, agencies, groups, leads..." aria-label="Search TravelNet"><kbd>⌘ K</kbd></label><div id="globalSearchResults" class="global-search-results" role="listbox" aria-label="Search suggestions" hidden></div></div>
+    <nav class="brand-tabs" aria-label="TravelNet sections"><a class="brand-tab active" href="index.html"><span>⌂</span>Feed</a><a class="brand-tab" href="network.html"><span>♧</span>Network</a><a class="brand-tab" href="groups.html"><span>◎</span>Groups</a><a class="brand-tab" href="jobs.html"><span>▦</span>B2B Leads &amp; Jobs</a><a class="brand-tab" href="messages.html"><span>✉</span>Messaging</a></nav>
     <nav class="top-actions" aria-label="Quick actions">
       <button class="icon-button mobile-search" data-action="search" aria-label="Search"><span>⌕</span></button>
       <a class="icon-button" href="notifications.html" aria-label="Notifications"><span>♧</span><i class="notification-dot"></i></a>
@@ -55,8 +56,8 @@
         <a class="side-link" href="network.html"><span>♧</span> My network</a>
         <a class="side-link" href="groups.html"><span>◎</span> Communities</a>
         <a class="side-link" href="companies.html"><span>▦</span> Companies & suppliers</a>
-        <button class="side-link" data-view="jobs"><span>▣</span> Travel careers</button>
-        <button class="side-link" data-view="events"><span>◷</span> Industry events</button>
+        <a class="side-link" href="jobs.html"><span>▣</span> B2B Leads &amp; Jobs</a>
+        <a class="side-link" href="events.html"><span>◷</span> Industry events</a>
       </div>
       <div class="side-section">
         <p class="side-label">YOUR WORKSPACE</p>
@@ -129,12 +130,8 @@
             <select id="feedFilter" aria-label="Filter feed"><option value="all">For you</option><option value="discussion">Discussions</option><option value="business">Business</option><option value="destination">Destinations</option></select>
           </div>
           <section class="composer panel">
-            <div class="composer-top"><div class="avatar">PK</div><button class="composer-prompt" data-action="compose">Share an insight, ask a question or start a conversation...</button></div>
-            <div class="composer-actions">
-              <button data-action="compose" data-kind="photo"><span class="action-symbol green">▧</span> Photo</button>
-              <button data-action="compose" data-kind="discussion"><span class="action-symbol blue">▤</span> Discussion</button>
-              <button data-action="compose" data-kind="opportunity"><span class="action-symbol amber">↗</span> Opportunity</button>
-            </div>
+            <div class="composer-top"><div class="avatar">PK</div><button class="composer-prompt" data-action="compose" data-kind="general">Share a travel insight, B2B opportunity or question...</button></div>
+            <div class="composer-actions"><button data-action="compose" data-kind="general"><span class="action-symbol green">✎</span> General post</button><button data-action="compose" data-kind="deal"><span class="action-symbol amber">↗</span> B2B deal / package</button><button data-action="compose" data-kind="poll"><span class="action-symbol blue">▤</span> Poll</button></div>
           </section>
           <div class="feed-sort"><span>Recent conversations</span><span class="sort-line"></span><label class="feed-sort-control"><span class="sr-only">Sort conversations</span><select id="feedSort" aria-label="Sort conversations"><option value="latest">Latest first</option><option value="engagement">Most discussed</option></select></label></div>
           <div id="feedList" class="feed-list" aria-live="polite"></div>
@@ -191,16 +188,13 @@
 </div>
 
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <button class="selected" data-view="home"><span>⌂</span>Home</button>
-  <a href="reels.html"><span>▣</span>Reels</a><a href="watch.html"><span>▷</span>Watch</a><a href="network.html"><span>♧</span>People</a>
-  <button data-action="compose"><span class="mobile-create">+</span>Create</button>
-  <a href="groups.html"><span>◎</span>Groups</a>
-  <a href="profile.html"><span>◉</span>Profile</a>
+  <a class="selected" href="index.html"><span>⌂</span>Feed</a><a href="network.html"><span>♧</span>Network</a><a href="groups.html"><span>◎</span>Groups</a><button data-action="compose" data-kind="general"><span class="mobile-create">+</span>Create</button><a href="jobs.html"><span>▦</span>Leads</a><a href="messages.html"><span>✉</span>Inbox</a>
 </nav>
 
 <div id="modalRoot" class="modal-root" aria-live="polite"></div>
 <div id="toastRoot" class="toast-root" aria-live="polite"></div>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/feed-upgrade.js"></script>
 <script src="assets/js/global-search.js"></script>
 <script src="assets/js/story-app.js"></script>
 <script src="assets/js/site-shell.js"></script></body>

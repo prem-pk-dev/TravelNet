@@ -11,7 +11,7 @@ let query="";
 let tab="explore";
 let onlySaved=false;
 let saved=[];
-try{saved=JSON.parse(localStorage.getItem(savedKey)||"[]")}catch(savedError){saved=[]}
+try{const stored=JSON.parse(localStorage.getItem(savedKey)||"[]");saved=Array.isArray(stored)?stored.filter(x=>typeof x==="string"):[]}catch(savedError){saved=[]}
 const esc=function(value){return String(value==null?"":value).replace(/[&<>"']/g,function(char){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]})};
 const pretty=function(value){return String(value||"").replace(/[-_]/g," ").replace(/\b\w/g,function(char){return char.toUpperCase()})};
 const isSaved=function(src){return saved.indexOf(src)!==-1};

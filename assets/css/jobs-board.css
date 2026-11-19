@@ -30,23 +30,23 @@
 .jobs-board .jobs-callout{margin-top:18px;padding:16px 18px;border-radius:13px;background:linear-gradient(110deg,#eeeaff,#e8f4ff)}
 .jobs-board .jobs-callout strong{font:700 13px Manrope;color:#37365e}
 .jobs-board .jobs-callout p{font-size:10px;color:#707995;line-height:1.6;margin:5px 0 0}
-.jobs-board .jobs-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:#17203999}
-.jobs-board .jobs-modal[hidden]{display:none}
-.jobs-board .jobs-modal-panel{width:min(520px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:16px;padding:22px;box-shadow:0 22px 70px #10172a55}
-.jobs-board .jobs-modal-panel h2{font:700 19px Manrope;margin:0 0 5px}
-.jobs-board .jobs-modal-panel>p{font-size:10px;color:var(--jb-muted);line-height:1.6;margin:0 0 15px}
-.jobs-board .jobs-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.jobs-board .jobs-form label{display:grid;gap:5px;font-size:9px;font-weight:700;color:#657087}
-.jobs-board .jobs-form label.full{grid-column:1/-1}
-.jobs-board .jobs-form input,.jobs-board .jobs-form select,.jobs-board .jobs-form textarea{width:100%;min-width:0;border:1px solid var(--jb-line);border-radius:8px;padding:10px;font:10px "DM Sans",sans-serif;color:#344057;background:#fff}
-.jobs-board .jobs-form textarea{min-height:90px;resize:vertical}
-.jobs-board .jobs-modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
-.jobs-board .jobs-modal-actions button{border:1px solid var(--jb-line);border-radius:8px;padding:9px 13px;background:#fff;color:#667187;font-size:10px;font-weight:700;cursor:pointer}
-.jobs-board .jobs-modal-actions button[type=submit]{background:#5742b3;color:#fff;border-color:#5742b3}
-.jobs-board .jobs-toast{position:fixed;z-index:1100;bottom:24px;left:50%;transform:translateX(-50%);padding:10px 15px;border-radius:9px;background:#202a43;color:#fff;font-size:10px;box-shadow:0 8px 28px #11182733}
-body.tn-dark .jobs-board .jobs-tabs,body.tn-dark .jobs-board .jobs-filter,body.tn-dark .jobs-board .opportunity-card,body.tn-dark .jobs-board .jobs-modal-panel{background:#142b3d;border-color:#35566b}
+.jobs-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:#17203999}
+.jobs-modal[hidden]{display:none}
+.jobs-modal-panel{width:min(520px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:16px;padding:22px;box-shadow:0 22px 70px #10172a55}
+.jobs-modal-panel h2{font:700 19px Manrope;margin:0 0 5px}
+.jobs-modal-panel>p{font-size:10px;color:var(--jb-muted);line-height:1.6;margin:0 0 15px}
+.jobs-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.jobs-form label{display:grid;gap:5px;font-size:9px;font-weight:700;color:#657087}
+.jobs-form label.full{grid-column:1/-1}
+.jobs-form input,.jobs-form select,.jobs-form textarea{width:100%;min-width:0;border:1px solid var(--jb-line);border-radius:8px;padding:10px;font:10px "DM Sans",sans-serif;color:#344057;background:#fff}
+.jobs-form textarea{min-height:90px;resize:vertical}
+.jobs-modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
+.jobs-modal-actions button{border:1px solid var(--jb-line);border-radius:8px;padding:9px 13px;background:#fff;color:#667187;font-size:10px;font-weight:700;cursor:pointer}
+.jobs-modal-actions button[type=submit]{background:#5742b3;color:#fff;border-color:#5742b3}
+.jobs-toast{position:fixed;z-index:1100;bottom:24px;left:50%;transform:translateX(-50%);padding:10px 15px;border-radius:9px;background:#202a43;color:#fff;font-size:10px;box-shadow:0 8px 28px #11182733}
+body.tn-dark .jobs-board .jobs-tabs,body.tn-dark .jobs-board .jobs-filter,body.tn-dark .jobs-board .opportunity-card,body.tn-dark .jobs-modal-panel{background:#142b3d;border-color:#35566b}
 body.tn-dark .jobs-board .jobs-heading h2,body.tn-dark .jobs-board .opportunity-card h3{color:#f1f7fa}
 body.tn-dark .jobs-board .opportunity-company,body.tn-dark .jobs-board .opportunity-card>p:last-of-type,body.tn-dark .jobs-board .jobs-heading p{color:#c4d5df}
-body.tn-dark .jobs-board .jobs-filter input,body.tn-dark .jobs-board .jobs-filter select,body.tn-dark .jobs-board .jobs-form input,body.tn-dark .jobs-board .jobs-form select,body.tn-dark .jobs-board .jobs-form textarea{background:#102436;color:#e6f1f7;border-color:#456477}
+body.tn-dark .jobs-board .jobs-filter input,body.tn-dark .jobs-board .jobs-filter select,body.tn-dark .jobs-form input,body.tn-dark .jobs-form select,body.tn-dark .jobs-form textarea{background:#102436;color:#e6f1f7;border-color:#456477}
 @media(max-width:760px){.jobs-board .jobs-grid{grid-template-columns:1fr}.jobs-board .jobs-filter{grid-template-columns:1fr 1fr}.jobs-board .jobs-filter input{grid-column:1/-1}}
-@media(max-width:480px){.jobs-board .jobs-toolbar{align-items:stretch}.jobs-board .jobs-tabs{width:100%}.jobs-board .jobs-tabs button{flex:1;padding:9px 7px}.jobs-board .jobs-filter{grid-template-columns:1fr}.jobs-board .jobs-filter input{grid-column:auto}.jobs-board .jobs-form{grid-template-columns:1fr}.jobs-board .jobs-form label.full{grid-column:auto}.jobs-board .jobs-heading{align-items:start;flex-direction:column}}
+@media(max-width:480px){.jobs-board .jobs-toolbar{align-items:stretch}.jobs-board .jobs-tabs{width:100%}.jobs-board .jobs-tabs button{flex:1;padding:9px 7px}.jobs-board .jobs-filter{grid-template-columns:1fr}.jobs-board .jobs-filter input{grid-column:auto}.jobs-form{grid-template-columns:1fr}.jobs-form label.full{grid-column:auto}.jobs-board .jobs-heading{align-items:start;flex-direction:column}}

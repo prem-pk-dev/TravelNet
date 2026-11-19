@@ -12,7 +12,7 @@ const seed=[
 ];
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let state={saved:[],interested:[],custom:[]};
-try{state={...state,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch{}
+try{const stored=JSON.parse(localStorage.getItem(KEY)||"{}");if(stored&&typeof stored==="object"&&!Array.isArray(stored)){state={...state,...stored};state.saved=Array.isArray(state.saved)?state.saved.filter(x=>typeof x==="string"):[];state.interested=Array.isArray(state.interested)?state.interested.filter(x=>typeof x==="string"):[];state.custom=Array.isArray(state.custom)?state.custom.filter(x=>x&&typeof x==="object"&&!Array.isArray(x)):[]}}catch{}
 const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{toast("Browser storage is unavailable.")}};
 function toast(msg){const old=$(".jobs-toast");if(old)old.remove();const n=document.createElement("div");n.className="jobs-toast";n.textContent=msg;document.body.append(n);setTimeout(()=>n.remove(),2300)}
 function all(){return [...state.custom,...seed]}

@@ -50,15 +50,16 @@ function composer(initial){
 function intercept(e){
  const el=e.target.closest("[data-action]");if(!el)return;
  const action=el.dataset.action,id=el.dataset.id,p=posts.find(x=>x.id===id);
- if(!["compose","tn-close","tn-backdrop","tn-like","tn-comment","tn-send-comment","tn-repost","tn-share","tn-vote","tn-menu","tn-hide"].includes(action))return;
+ if(!["compose","tn-close","tn-backdrop","tn-like","tn-comment","tn-send-comment","tn-repost","tn-share","tn-vote","tn-menu","tn-hide","connect"].includes(action))return;
  e.preventDefault();e.stopImmediatePropagation();
  if(action==="compose"){composer(el.dataset.kind);return}
+ if(action==="connect"){const name=el.dataset.person||"this professional",connections=read(CONNECTIONS,[]);if(connections.includes(name)){notify("Invitation already sent.");return}modal("Connect with "+name,'<p class="post-copy">Send a professional connection invitation.</p><div class="form-field"><label for="tn-connect-note">Personal note (optional)</label><textarea id="tn-connect-note" placeholder="Hello, I would like to connect..."></textarea></div>',"Send invitation",()=>{connections.push(name);write(CONNECTIONS,connections);close();el.textContent="✓";el.disabled=true;notify("Invitation saved locally.")});return}
  if(action==="tn-close"||(action==="tn-backdrop"&&e.target===el)){close();return}
  if(action==="tn-like"&&p){p.liked=!p.liked;p.likes+=p.liked?1:-1;write(KEY,posts);render();return}
  if(action==="tn-comment"&&p){const box=$("#tn-comments-"+id);box.innerHTML+='<div class="comment-box"><input id="tn-comment-input" placeholder="Write a useful reply..." aria-label="Write a comment"><button class="button button-dark" data-action="tn-send-comment" data-id="'+esc(id)+'">Send</button></div>';$("#tn-comment-input").focus();return}
  if(action==="tn-send-comment"&&p){const input=$("#tn-comment-input"),text=input?.value.trim();if(!text){notify("Write a comment first.");return}const list=commentsFor(id);list.push({author:"You",text,createdAt:Date.now()});write("travelnet:phase1:comments:"+id,list);p.comments++;write(KEY,posts);render();notify("Comment saved locally.");return}
  if(action==="tn-repost"&&p){const reposts=read("travelnet:phase1:reposts",[]);if(reposts.includes(id)){notify("You have already reposted this item.");return}reposts.push(id);write("travelnet:phase1:reposts",reposts);p.shares++;write(KEY,posts);render();notify("Repost saved to your local activity.");return}
- if(action==="tn-share"&&p){const shares=read("travelnet:phase1:shares",[]);shares.push({postId:id,createdAt:Date.now()});write("travelnet:phase1:shares",shares);notify("Share action saved locally.");return}
+ if(action==="tn-share"&&p){const shares=read("travelnet:phase1:shares",[]);shares.push({postId:id,createdAt:Date.now()});write("travelnet:phase1:shares",shares);const url=location.href.split("#")[0]+"#post-"+id;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(url).then(()=>notify("Post link copied.")).catch(()=>notify("Share saved locally; clipboard access is unavailable."))}else notify("Share saved locally.");return}
  if(action==="tn-vote"&&p&&p.options&&p.voted===undefined){const n=Number(el.dataset.option);if(n>=0&&n<p.options.length){p.voted=n;p.votes[n]=(p.votes[n]||0)+1;write(KEY,posts);render();notify("Your poll vote was saved locally.")}return}
  if(action==="tn-menu"&&p){modal("Post options",'<p class="post-copy">Manage this demo conversation.</p><button class="side-link" data-action="tn-hide" data-id="'+esc(id)+'">Hide this post</button>',"Done",close);return}
  if(action==="tn-hide"&&p){hidden=Array.from(new Set(hidden.concat(id)));write(HIDDEN,hidden);close();render();notify("Post hidden in this browser.")}

@@ -1,8 +1,9 @@
 (()=>{"use strict";
-const KEY="travelnet:phase1:posts",HIDDEN="travelnet:phase1:hidden",CONNECTIONS="travelnet:phase1:connections";
+const KEY="travelnet:phase1:posts",HIDDEN="travelnet:phase1:hidden",CONNECTIONS="travelnet:invitations";
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{notify("Browser storage is unavailable.");return false}};
+ const personIds={"Alex Morgan":"alex","Samira Rahman":"samira"};const legacyInvitations=read("travelnet:phase1:connections",[]),sharedInvitations=read(CONNECTIONS,[]);let migrated=false;legacyInvitations.forEach(name=>{const id=personIds[name];if(id&&!sharedInvitations.includes(id)){sharedInvitations.push(id);migrated=true}});if(migrated)write(CONNECTIONS,sharedInvitations);
 const seeds=[
 {id:"tn-01",author:"Maya Chen",role:"Destination strategy · DMC partnerships",place:"Singapore",initials:"MC",tone:"avatar-blue",time:"2 hours ago",badge:["DMC"],tag:"DESTINATION INSIGHT",dest:["Bali","Thailand"],text:"We are refreshing our Bali and Thailand ground network for Q1. Looking for reliable local experience partners with transparent net rates, licensed guides and strong on-ground support. Which quality checks work best for your DMC?",likes:28,comments:6,shares:3,image:"https://media-assets-4sb.pages.dev/images/travel/destinations/07-maldives-v01.webp"},
 {id:"tn-02",author:"Samira Rahman",role:"Hotel contracting · Verified hotelier",place:"Dubai, UAE",initials:"SR",tone:"avatar-coral",time:"Yesterday",badge:["Verified Hotelier"],tag:"B2B HOTEL OFFER",dest:["Dubai"],text:"Sharing a sample trade offer for agency partners planning winter departures. Flexible rooming support and dedicated reservations contact for confirmed groups.",deal:{title:"Dubai 4-star group stay · 20–30 pax",price:"AED 410 / room / night",details:"Breakfast included · Twin / double rooms · Airport transfers on request"},likes:41,comments:12,shares:5},
@@ -53,7 +54,7 @@ function intercept(e){
  if(!["compose","tn-close","tn-backdrop","tn-like","tn-comment","tn-send-comment","tn-repost","tn-share","tn-vote","tn-menu","tn-hide","connect"].includes(action))return;
  e.preventDefault();e.stopImmediatePropagation();
  if(action==="compose"){composer(el.dataset.kind);return}
- if(action==="connect"){const name=el.dataset.person||"this professional",connections=read(CONNECTIONS,[]);if(connections.includes(name)){notify("Invitation already sent.");return}modal("Connect with "+name,'<p class="post-copy">Send a professional connection invitation.</p><div class="form-field"><label for="tn-connect-note">Personal note (optional)</label><textarea id="tn-connect-note" placeholder="Hello, I would like to connect..."></textarea></div>',"Send invitation",()=>{connections.push(name);write(CONNECTIONS,connections);close();el.textContent="✓";el.disabled=true;notify("Invitation saved locally.")});return}
+ if(action==="connect"){const name=el.dataset.person||"this professional",personId=personIds[name],invitations=read(CONNECTIONS,[]);if(personId&&invitations.includes(personId)){notify("Invitation already sent.");return}modal("Connect with "+name,'<p class="post-copy">Send a professional connection invitation.</p><div class="form-field"><label for="tn-connect-note">Personal note (optional)</label><textarea id="tn-connect-note" placeholder="Hello, I would like to connect..."></textarea></div>',"Send invitation",()=>{if(personId&&!invitations.includes(personId)){invitations.push(personId);write(CONNECTIONS,invitations)}close();el.textContent="✓";el.disabled=true;notify("Invitation saved locally.")});return}
  if(action==="tn-close"||(action==="tn-backdrop"&&e.target===el)){close();return}
  if(action==="tn-like"&&p){p.liked=!p.liked;p.likes+=p.liked?1:-1;write(KEY,posts);render();return}
  if(action==="tn-comment"&&p){const box=$("#tn-comments-"+id);box.innerHTML+='<div class="comment-box"><input id="tn-comment-input" placeholder="Write a useful reply..." aria-label="Write a comment"><button class="button button-dark" data-action="tn-send-comment" data-id="'+esc(id)+'">Send</button></div>';$("#tn-comment-input").focus();return}
@@ -67,6 +68,6 @@ function intercept(e){
 document.addEventListener("click",intercept,true);
 $("#feedFilter")?.addEventListener("change",render);$("#feedSort")?.addEventListener("change",render);
 document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
-$$('[data-action="connect"]').forEach(b=>{if(read(CONNECTIONS,[]).includes(b.dataset.person)){b.textContent="✓";b.disabled=true}});
+$('[data-action="connect"]').forEach(b=>{const id=personIds[b.dataset.person];if(id&&read(CONNECTIONS,[]).includes(id)){b.textContent="✓";b.disabled=true}});
 render();
 })();

@@ -1,0 +1,52 @@
+/* TravelNet B2B leads & jobs board */
+.jobs-board{--jb-ink:#26324a;--jb-muted:#7d879a;--jb-line:#e7eaf1;--jb-accent:#5942b6;--jb-soft:#f2efff;color:var(--jb-ink)}
+.jobs-board .jobs-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 12px;flex-wrap:wrap}
+.jobs-board .jobs-tabs{display:flex;gap:6px;padding:5px;background:#fff;border:1px solid var(--jb-line);border-radius:11px}
+.jobs-board .jobs-tabs button,.jobs-board .jobs-filter button{border:0;border-radius:8px;padding:9px 13px;background:transparent;color:var(--jb-muted);font-size:10px;font-weight:700;cursor:pointer}
+.jobs-board .jobs-tabs button.active{background:var(--jb-soft);color:var(--jb-accent)}
+.jobs-board .jobs-filter{display:grid;grid-template-columns:minmax(180px,1fr) 170px 160px;gap:8px;background:#fff;border:1px solid var(--jb-line);border-radius:12px;padding:10px}
+.jobs-board .jobs-filter input,.jobs-board .jobs-filter select{width:100%;min-width:0;border:1px solid var(--jb-line);border-radius:8px;padding:10px 11px;background:#fff;color:#4d5870;font:10px "DM Sans",sans-serif;outline-color:#8b79db}
+.jobs-board .jobs-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:20px 0 12px}
+.jobs-board .jobs-heading h2{font:700 18px Manrope;margin:0 0 4px}
+.jobs-board .jobs-heading p{font-size:10px;color:var(--jb-muted);margin:0}
+.jobs-board .jobs-count{font-size:10px;color:var(--jb-muted);white-space:nowrap}
+.jobs-board .jobs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.jobs-board .opportunity-card{min-width:0;background:#fff;border:1px solid var(--jb-line);border-radius:14px;padding:16px;box-shadow:0 5px 18px #2d3a6508}
+.jobs-board .opportunity-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.jobs-board .opportunity-kind{font-size:8px;letter-spacing:.8px;font-weight:800;color:#6654b8;background:#f1efff;border-radius:20px;padding:6px 8px}
+.jobs-board .opportunity-status{font-size:8px;color:#78869a}
+.jobs-board .opportunity-card h3{font:700 14px/1.4 Manrope;margin:13px 0 5px;color:#303951}
+.jobs-board .opportunity-company{font-size:10px;color:#67738a;margin:0}
+.jobs-board .opportunity-meta{display:flex;flex-wrap:wrap;gap:7px 13px;margin:12px 0;color:#7e899b;font-size:9px}
+.jobs-board .opportunity-card>p:last-of-type{font-size:10px;line-height:1.65;color:#727e91;min-height:48px;margin:0}
+.jobs-board .opportunity-tags{display:flex;gap:5px;flex-wrap:wrap;margin:12px 0}
+.jobs-board .opportunity-tags span{font-size:8px;color:#65728a;background:#f4f6fa;border-radius:20px;padding:5px 7px}
+.jobs-board .opportunity-actions{display:flex;gap:7px;border-top:1px solid #eff1f5;padding-top:12px;margin-top:12px}
+.jobs-board .opportunity-actions button,.jobs-board .jobs-primary{border:1px solid #e5e7ef;border-radius:8px;padding:8px 11px;background:#fff;color:#59647b;font-size:9px;font-weight:700;cursor:pointer}
+.jobs-board .opportunity-actions button:last-child,.jobs-board .jobs-primary{background:#5742b3;border-color:#5742b3;color:#fff}
+.jobs-board .opportunity-actions button[aria-pressed=true]{background:#f1efff;border-color:#d8d0ff;color:#5942b6}
+.jobs-board .jobs-primary{padding:10px 14px}
+.jobs-board .jobs-empty{grid-column:1/-1;padding:28px;text-align:center;background:#fff;border:1px dashed #d9ddeb;border-radius:12px;color:var(--jb-muted);font-size:11px}
+.jobs-board .jobs-callout{margin-top:18px;padding:16px 18px;border-radius:13px;background:linear-gradient(110deg,#eeeaff,#e8f4ff)}
+.jobs-board .jobs-callout strong{font:700 13px Manrope;color:#37365e}
+.jobs-board .jobs-callout p{font-size:10px;color:#707995;line-height:1.6;margin:5px 0 0}
+.jobs-board .jobs-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:#17203999}
+.jobs-board .jobs-modal[hidden]{display:none}
+.jobs-board .jobs-modal-panel{width:min(520px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:16px;padding:22px;box-shadow:0 22px 70px #10172a55}
+.jobs-board .jobs-modal-panel h2{font:700 19px Manrope;margin:0 0 5px}
+.jobs-board .jobs-modal-panel>p{font-size:10px;color:var(--jb-muted);line-height:1.6;margin:0 0 15px}
+.jobs-board .jobs-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.jobs-board .jobs-form label{display:grid;gap:5px;font-size:9px;font-weight:700;color:#657087}
+.jobs-board .jobs-form label.full{grid-column:1/-1}
+.jobs-board .jobs-form input,.jobs-board .jobs-form select,.jobs-board .jobs-form textarea{width:100%;min-width:0;border:1px solid var(--jb-line);border-radius:8px;padding:10px;font:10px "DM Sans",sans-serif;color:#344057;background:#fff}
+.jobs-board .jobs-form textarea{min-height:90px;resize:vertical}
+.jobs-board .jobs-modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
+.jobs-board .jobs-modal-actions button{border:1px solid var(--jb-line);border-radius:8px;padding:9px 13px;background:#fff;color:#667187;font-size:10px;font-weight:700;cursor:pointer}
+.jobs-board .jobs-modal-actions button[type=submit]{background:#5742b3;color:#fff;border-color:#5742b3}
+.jobs-board .jobs-toast{position:fixed;z-index:1100;bottom:24px;left:50%;transform:translateX(-50%);padding:10px 15px;border-radius:9px;background:#202a43;color:#fff;font-size:10px;box-shadow:0 8px 28px #11182733}
+body.tn-dark .jobs-board .jobs-tabs,body.tn-dark .jobs-board .jobs-filter,body.tn-dark .jobs-board .opportunity-card,body.tn-dark .jobs-board .jobs-modal-panel{background:#142b3d;border-color:#35566b}
+body.tn-dark .jobs-board .jobs-heading h2,body.tn-dark .jobs-board .opportunity-card h3{color:#f1f7fa}
+body.tn-dark .jobs-board .opportunity-company,body.tn-dark .jobs-board .opportunity-card>p:last-of-type,body.tn-dark .jobs-board .jobs-heading p{color:#c4d5df}
+body.tn-dark .jobs-board .jobs-filter input,body.tn-dark .jobs-board .jobs-filter select,body.tn-dark .jobs-board .jobs-form input,body.tn-dark .jobs-board .jobs-form select,body.tn-dark .jobs-board .jobs-form textarea{background:#102436;color:#e6f1f7;border-color:#456477}
+@media(max-width:760px){.jobs-board .jobs-grid{grid-template-columns:1fr}.jobs-board .jobs-filter{grid-template-columns:1fr 1fr}.jobs-board .jobs-filter input{grid-column:1/-1}}
+@media(max-width:480px){.jobs-board .jobs-toolbar{align-items:stretch}.jobs-board .jobs-tabs{width:100%}.jobs-board .jobs-tabs button{flex:1;padding:9px 7px}.jobs-board .jobs-filter{grid-template-columns:1fr}.jobs-board .jobs-filter input{grid-column:auto}.jobs-board .jobs-form{grid-template-columns:1fr}.jobs-board .jobs-form label.full{grid-column:auto}.jobs-board .jobs-heading{align-items:start;flex-direction:column}}
